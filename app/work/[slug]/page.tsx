@@ -121,7 +121,8 @@ export default function ProjectPage({ params }: PageProps) {
                   rel="noopener noreferrer"
                   className="inline-block text-sm uppercase tracking-wide font-medium border-b-2 border-orange-600 hover:border-orange-700 text-orange-600 hover:text-orange-700 transition-colors pb-1"
                 >
-                  Read full case study →
+                  {('externalLabel' in project && project.externalLabel) ||
+                    'Read full case study →'}
                 </a>
               </div>
             )}

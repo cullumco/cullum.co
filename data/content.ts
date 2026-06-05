@@ -170,6 +170,46 @@ export const workPage = {
   },
   projects: [
     {
+      slug: "cadence",
+      name: "Cadence",
+      company: "Cullum & Co",
+      tagline:
+        "An open-source ambient context layer that lets coding agents read the room, not just the prompt.",
+      image: "/images/work/cadence/cadence.webp",
+      externalUrl: "https://cullumco.github.io/cadence/",
+      externalLabel: "Visit the Cadence site →",
+      sections: [
+        {
+          heading: "",
+          body: [
+            "Coding agents have one input channel: text. Your prompt doesn't say you're tired but still shipping, that you just got back from a long break, or that you want the agent to stop asking permission and make the call. Cadence is the second channel — an ambient context layer I'm building and shipping in the open as a Cullum & Co project.",
+            "It reads the room around the prompt: time, git state, prompt rhythm, music, Focus mode, and a self-reported state become visible context, distilled into four independent dials — pace, tone, posture, and proactivity. Every prompt then carries an inspectable state block plus a lens for reading what you meant. It's a lens, not a leash: it never rewrites your words or constrains the agent, and it always defers to what you actually typed.",
+            "The result is the same prompt landing differently in different rooms. In a shipping cadence, \"how should I structure the retry logic?\" gets the call made — backoff with jitter, here's the diff. In a thinking cadence, it gets the trade-offs explored patiently, no pressure to pick. The alpha ships as a Claude Code plugin, macOS-first because the signals read the Mac around you — but Claude Code is just the alpha surface. The product is the context layer underneath it.",
+          ],
+        },
+      ],
+    },
+    {
+      slug: "kettel",
+      name: "Kettel",
+      company: "Cullum & Co",
+      tagline:
+        "An open-source workspace where strategy, creative, and technology think together before the agent builds.",
+      image: "/images/work/kettel/kettel.webp",
+      externalUrl: "https://kettel.vercel.app",
+      externalLabel: "Visit the Kettel site →",
+      sections: [
+        {
+          heading: "",
+          body: [
+            "Every team scaling AI-native delivery hits the same wall: the creative partnership that produces excellent work — the back-and-forth between strategy, creative, and technology — gets flattened into one person's conversation with an LLM. The rest of the team becomes a spectator. Intent gets lost. Craft gets diluted. Kettel is a Cullum & Co product, built in the open, that rebuilds the room.",
+            "Its core artifact is the plan file: structured markdown that lives in your git repo, where each section has an owner and each annotation has a perspective. Strategy writes intent, creative writes direction, technology writes approach — three voices attributed, three colors of ink. Upstream, a notebook holds research, customer quotes, and technical spikes as a linked graph rather than a folder, so the agent traverses connected thinking instead of a pile of files. The agent reads all of it and ships the synthesis, not just the last prompt.",
+            "The plan is also the handoff: self-contained enough for Claude Code, Cursor, or Windsurf to execute without needing access to Kettel at all. The model is open core — the plan file, notebook, and agent integration are free and open source, with the v0.1 web app live and an MCP server next on the roadmap. The plan file is the room. The code is downstream.",
+          ],
+        },
+      ],
+    },
+    {
       slug: "ignition-zero-project-air",
       name: "Ignition Zero & Project AIR",
       company: "World Wide Technology",
