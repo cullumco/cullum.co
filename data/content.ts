@@ -196,7 +196,7 @@ export const workPage = {
       tagline:
         "An open-source workspace where strategy, creative, and technology think together before the agent builds.",
       image: "/images/work/kettel/kettel.webp",
-      externalUrl: "https://kettel.vercel.app",
+      externalUrl: "https://kettel.cullum.co",
       externalLabel: "Visit the Kettel site →",
       sections: [
         {
