@@ -12,7 +12,7 @@ This is a Next.js-based personal consultancy website (scullum.com) built with Ty
 - **Language**: TypeScript (strict mode enabled)
 - **Styling**: Tailwind CSS with Manrope font family (via next/font)
 - **UI Library**: React 18 with lucide-react for icons
-- **Package Manager**: npm (Node.js >= 18.17.0 required)
+- **Package Manager**: npm (Node.js >= 22.0.0 required)
 
 ## Development Commands
 
