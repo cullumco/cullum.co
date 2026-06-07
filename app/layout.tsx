@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/images/scott-cullum.jpg',
+        url: '/og.png',
         width: 1200,
         height: 630,
         alt: 'Scott Cullum - Creative Technologist & Product Consultant',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Scott Cullum - Creative Technologist & Product Consultant',
     description: 'Senior consultant working across design, engineering, and AI-native product acceleration.',
-    images: ['/images/scott-cullum.jpg'],
+    images: ['/og.png'],
   },
 };
 
@@ -53,9 +53,9 @@ export default function RootLayout({
     url: 'https://scullum.com',
     jobTitle: 'Creative Technologist & Product Consultant',
     description: 'Senior consultant working across design, engineering, and AI-native product acceleration.',
-    email: 'scott@scullum.com',
+    email: 'scott@cullum.co',
     sameAs: [
-      'https://linkedin.com/in/scottcullum',
+      'https://www.linkedin.com/in/scullum/',
     ],
     knowsAbout: [
       'Product Strategy',

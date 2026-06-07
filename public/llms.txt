@@ -1,0 +1,22 @@
+# Scott Cullum
+
+> Scott Cullum is a creative technologist who helps teams cut through ambiguity and move the work forward. His work sits across design, engineering, and product, bridging conversations that often slow progress.
+
+Scott works in an AI-native way — faster exploration, fewer wasted cycles. Most clients bring him in part-time for senior direction and hands-on support; when a project needs more depth, he works with a small network of trusted collaborators.
+
+## How he helps
+
+- Advisory support for product and technology leaders
+- AI-native prototyping and technical exploration
+- Capability building for teams adopting modern workflows
+
+## Pages
+
+- [About](https://scullum.com/about): background and approach
+- [Services](https://scullum.com/services): engagement models and offerings
+- [Work](https://scullum.com/work): selected projects and case studies
+
+## Contact
+
+- Email: scott@cullum.co
+- [LinkedIn](https://www.linkedin.com/in/scullum/)

@@ -3,7 +3,7 @@
 export const siteMeta = {
   name: "Scott Cullum",
   tagline: "A creative technologist who helps teams cut through ambiguity and move the work forward.",
-  email: "scott@scullum.com",
+  email: "scott@cullum.co",
   social: {
     linkedin: "https://www.linkedin.com/in/scullum/",
   },
@@ -493,7 +493,7 @@ export const timelinePage = {
 
 export const footer = {
   heading: "Get in touch",
-  email: "scott@scullum.com",
+  email: "scott@cullum.co",
   linkedinLabel: "LinkedIn →",
   availability: "Currently accepting select engagements for 2026.",
   tagline: "A creative technologist who helps teams cut through ambiguity and move the work forward.",
