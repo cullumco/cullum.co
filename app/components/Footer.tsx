@@ -1,4 +1,6 @@
 import { footer, siteMeta } from '@/data/content';
+import Link from 'next/link';
+import { Wordmark } from './Wordmark';
 
 export function Footer() {
   return (
@@ -11,7 +13,7 @@ export function Footer() {
           <div className="space-y-4">
             <a
               href={`mailto:${footer.email}`}
-              className="text-3xl md:text-4xl text-orange-600 hover:text-orange-700 transition-colors inline-block"
+              className="text-3xl md:text-4xl text-orange-600 hover:text-orange-700 transition-colors inline-block break-all"
             >
               {footer.email}
             </a>
@@ -34,6 +36,9 @@ export function Footer() {
         </div>
 
         <div className="pt-16 border-t border-neutral-200">
+          <Link href="/" aria-label={`${siteMeta.name} home`} className="inline-block mb-6">
+            <Wordmark className="w-64 max-w-full" />
+          </Link>
           <p className="text-neutral-500 text-sm tracking-wide leading-relaxed">
             {footer.tagline}
           </p>

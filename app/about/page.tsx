@@ -5,32 +5,32 @@ import { ExperienceTimeline } from '@/app/components/ExperienceTimeline';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'About - Scott Cullum',
-  description: 'Learn about Scott Cullum, a creative technologist with 20+ years of experience bridging design, engineering, and strategy.',
+  title: 'About - Cullum & Co',
+  description: 'Meet Cullum & Co, the creative technology practice led by Scott Cullum, and explore his experience across design, engineering, and strategy.',
   alternates: {
-    canonical: 'https://scullum.com/about',
+    canonical: 'https://cullum.co/about',
   },
   openGraph: {
-    title: 'About - Scott Cullum',
-    description: 'Learn about Scott Cullum, a creative technologist with 20+ years of experience bridging design, engineering, and strategy.',
-    url: 'https://scullum.com/about',
-    siteName: 'Scott Cullum',
+    title: 'About - Cullum & Co',
+    description: 'Meet Cullum & Co, the creative technology practice led by Scott Cullum, and explore his experience across design, engineering, and strategy.',
+    url: 'https://cullum.co/about',
+    siteName: 'Cullum & Co',
     locale: 'en_US',
-    type: 'profile',
+    type: 'website',
     images: [
       {
-        url: '/images/scott-cullum.jpg',
+        url: '/og.png',
         width: 1200,
         height: 630,
-        alt: 'Scott Cullum',
+        alt: 'Cullum & Co - Creative technology and fractional advisory',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About - Scott Cullum',
-    description: 'Learn about Scott Cullum, a creative technologist with 20+ years of experience bridging design, engineering, and strategy.',
-    images: ['/images/scott-cullum.jpg'],
+    title: 'About - Cullum & Co',
+    description: 'Meet Cullum & Co, the creative technology practice led by Scott Cullum, and explore his experience across design, engineering, and strategy.',
+    images: [{ url: '/og.png', alt: 'Cullum & Co - Creative technology and fractional advisory' }],
   },
 };
 
@@ -38,7 +38,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white text-neutral-900">
       <Navigation />
-      <main className="pt-32 pb-24 px-8">
+      <main id="main-content" className="pt-32 pb-24 px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-12 gap-16">
             {/* Sidebar with label and photo */}
@@ -65,7 +65,7 @@ export default function AboutPage() {
             {/* Content */}
             <div className="md:col-span-9 space-y-12">
               {aboutPage.sections.map((section, sectionIndex) => (
-                <div key={sectionIndex}>
+                <div key={sectionIndex} id={section.heading === 'Scott Cullum' ? 'scott-cullum' : undefined}>
                   {section.heading && (
                     <>
                       <h2 className="text-2xl font-semibold tracking-tight mb-6">

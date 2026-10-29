@@ -22,24 +22,24 @@ export async function generateMetadata({ params }: PageProps) {
 
   if (!project) {
     return {
-      title: 'Project Not Found',
+      title: 'Project Not Found - Cullum & Co',
     };
   }
 
-  const url = `https://scullum.com/work/${project.slug}`;
-  const imageUrl = project.image || '/images/scott-cullum.jpg';
+  const url = `https://cullum.co/work/${project.slug}`;
+  const imageUrl = project.image || '/og.png';
 
   return {
-    title: `${project.name} - Scott Cullum`,
+    title: `${project.name} - Cullum & Co`,
     description: project.tagline,
     alternates: {
       canonical: url,
     },
     openGraph: {
-      title: `${project.name} - Scott Cullum`,
+      title: `${project.name} - Cullum & Co`,
       description: project.tagline,
       url: url,
-      siteName: 'Scott Cullum',
+      siteName: 'Cullum & Co',
       locale: 'en_US',
       type: 'article',
       images: [
@@ -53,7 +53,7 @@ export async function generateMetadata({ params }: PageProps) {
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${project.name} - Scott Cullum`,
+      title: `${project.name} - Cullum & Co`,
       description: project.tagline,
       images: [imageUrl],
     },
@@ -75,13 +75,14 @@ export default function ProjectPage({ params }: PageProps) {
     author: {
       '@type': 'Person',
       name: 'Scott Cullum',
-      url: 'https://scullum.com',
+      '@id': 'https://cullum.co/about#scott-cullum',
+      url: 'https://cullum.co/about',
     },
     publisher: {
       '@type': 'Organization',
       name: project.company,
     },
-    url: `https://scullum.com/work/${project.slug}`,
+    url: `https://cullum.co/work/${project.slug}`,
     image: project.image,
   };
 
@@ -92,7 +93,7 @@ export default function ProjectPage({ params }: PageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Navigation />
-      <main className="pt-32 pb-24 px-8">
+      <main id="main-content" className="pt-32 pb-24 px-8">
         <div className="max-w-4xl mx-auto">
           {/* Back link */}
           <Link
@@ -105,7 +106,7 @@ export default function ProjectPage({ params }: PageProps) {
           {/* Project header */}
           <div className="mb-16">
             <p className="text-sm uppercase tracking-[0.2em] text-neutral-500 mb-6 font-semibold">
-              {project.company}
+              Scott Cullum · {project.company}
             </p>
             <h1 className="text-5xl md:text-6xl font-semibold leading-tight tracking-tight mb-6 text-orange-600">
               {project.name}

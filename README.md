@@ -1,6 +1,6 @@
-# Scott Cullum - Portfolio Site
+# Cullum & Co
 
-A modern, performant portfolio website built with Next.js 14, showcasing professional services in creative technology, design, engineering, and AI-native product development.
+The Cullum & Co practice website, built with Next.js 14, showcasing services in creative technology, design, engineering, and AI-native product development. Case studies include Cullum & Co projects and Scott Cullum's work at their credited organizations.
 
 ## 🚀 Quick Start
 
@@ -26,7 +26,7 @@ Open [http://localhost:3000](http://localhost:3000) to view the site.
 ## 🏗️ Project Structure
 
 ```
-scullum.com/
+cullum.co/
 ├── app/
 │   ├── components/       # React components
 │   ├── about/            # About page
@@ -66,7 +66,7 @@ npm run typecheck  # Type check without building
 
 - **Main Page** (`/`): Single-page scroll with sections:
   - Home (hero section with orange background)
-  - "How I help" (full-width orange section)
+  - "How we help" (full-width orange section)
   - Work (project previews)
   - Contact
 
@@ -110,4 +110,10 @@ Copy `.env.local.example` to `.env.local` and add your environment variables.
 
 ## 📄 License
 
-All rights reserved © 2025 Scott Cullum
+All rights reserved © 2026 Cullum & Co
+
+## Brand assets
+
+`public/images/cullum-and-co-wordmark.png` is the original, unmodified transparent wordmark supplied for the Studio One deck (2018 × 779). Keep its aspect ratio and colors, and display it on a light background.
+
+Run `node scripts/generate-brand-assets.mjs` to regenerate the social sharing card and PNG icons from that same artwork using Next.js ImageResponse. The headshot and historical project images remain in their original contexts.

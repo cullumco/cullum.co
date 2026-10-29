@@ -1,31 +1,16 @@
 'use client';
 
-import { useState, useEffect } from 'react';
 import { homePage } from '@/data/content';
 import { motion } from 'framer-motion';
 
 export function Home() {
-  const [hideHeroName, setHideHeroName] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 100) {
-        setHideHeroName(true);
-        window.removeEventListener('scroll', handleScroll);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
     <section id="home" className="min-h-screen flex items-center bg-gradient-to-br from-orange-600 via-orange-500 to-orange-700 text-white px-8 pt-24 pb-32 animate-gradient bg-[length:200%_200%]">
       <div className="max-w-7xl mx-auto w-full">
         <div className="max-w-5xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: hideHeroName ? 0 : 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             className="py-8 mb-4"
           >
@@ -70,7 +55,7 @@ export function Home() {
               href="/about"
               className="inline-block text-sm uppercase tracking-wide font-medium border-b-2 border-white hover:border-white/70 hover:text-white/70 transition-colors pb-1"
             >
-              More about me
+              About the practice
             </a>
           </motion.div>
         </div>

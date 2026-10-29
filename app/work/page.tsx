@@ -5,32 +5,32 @@ import { Navigation } from '@/app/components/Navigation';
 import { Footer } from '@/app/components/Footer';
 
 export const metadata = {
-  title: 'Work - Scott Cullum',
-  description: 'Portfolio of work spanning design, engineering, and product across organizations from early-stage teams to global enterprises.',
+  title: 'Work - Cullum & Co',
+  description: 'Selected Cullum & Co projects and Scott Cullum’s work at World Wide Technology and AKQA, spanning design, engineering, and product.',
   alternates: {
-    canonical: 'https://scullum.com/work',
+    canonical: 'https://cullum.co/work',
   },
   openGraph: {
-    title: 'Work - Scott Cullum',
-    description: 'Portfolio of work spanning design, engineering, and product across organizations from early-stage teams to global enterprises.',
-    url: 'https://scullum.com/work',
-    siteName: 'Scott Cullum',
+    title: 'Work - Cullum & Co',
+    description: 'Selected Cullum & Co projects and Scott Cullum’s work at World Wide Technology and AKQA, spanning design, engineering, and product.',
+    url: 'https://cullum.co/work',
+    siteName: 'Cullum & Co',
     locale: 'en_US',
     type: 'website',
     images: [
       {
-        url: '/images/scott-cullum.jpg',
+        url: '/og.png',
         width: 1200,
         height: 630,
-        alt: 'Scott Cullum - Work',
+        alt: 'Cullum & Co - Work',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Work - Scott Cullum',
-    description: 'Portfolio of work spanning design, engineering, and product across organizations from early-stage teams to global enterprises.',
-    images: ['/images/scott-cullum.jpg'],
+    title: 'Work - Cullum & Co',
+    description: 'Selected Cullum & Co projects and Scott Cullum’s work at World Wide Technology and AKQA, spanning design, engineering, and product.',
+    images: ['/og.png'],
   },
 };
 
@@ -38,7 +38,7 @@ export default function WorkPage() {
   return (
     <div className="min-h-screen bg-white text-neutral-900">
       <Navigation />
-      <main className="pt-32 pb-24 px-8">
+      <main id="main-content" className="pt-32 pb-24 px-8">
         <div className="max-w-7xl mx-auto">
           <div className="mb-24">
             <h1 className="text-sm uppercase tracking-[0.2em] text-orange-600 mb-6 font-semibold">

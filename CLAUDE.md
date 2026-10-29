@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Next.js-based personal consultancy website (scullum.com) built with TypeScript, React, and Tailwind CSS. The site is a single-page application showcasing professional services in design, engineering, and AI-native product development.
+This is the Next.js-based Cullum & Co practice website (cullum.co), built with TypeScript, React, and Tailwind CSS. The site showcases professional services in design, engineering, and AI-native product development. Preserve Scott Cullum's biography, personal career history, and credited contributions to historical case studies.
 
 ## Technology Stack
 
@@ -73,7 +73,7 @@ All site content is centralized in a single file for easy updates:
 - **data/content.ts**: Single source of truth containing:
   - `siteMeta`: Site-wide metadata (name, email, social links)
   - `nav`: Navigation links
-  - `homePage`: Hero content and "How I help" items
+  - `homePage`: Hero content and "How we help" items
   - `aboutPage`: Narrative sections about background and approach
   - `servicesPage`: Detailed service offerings with structured content
   - `workPage`: Project previews and full case study content
@@ -103,11 +103,11 @@ Both development and production servers are explicitly configured to run on port
 
 ## SEO & Metadata
 
-- Structured data (JSON-LD) for Person schema in app/layout.tsx
+- Structured data (JSON-LD) for the Cullum & Co practice and Scott Cullum as a separate Person in app/layout.tsx
 - Open Graph and Twitter Card metadata configured
 - Dynamic robots.txt via app/robots.ts
 - Dynamic sitemap.xml via app/sitemap.ts
-- metadataBase set to https://scullum.com
+- metadataBase set to https://cullum.co
 
 ## Routing Structure
 

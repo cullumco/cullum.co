@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://scullum.com/sitemap.xml',
+    sitemap: 'https://cullum.co/sitemap.xml',
   };
 }

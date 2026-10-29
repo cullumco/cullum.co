@@ -3,7 +3,7 @@ import { workPage } from '@/data/content';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const workEntries = workPage.projects.map((project) => ({
-    url: `https://scullum.com/work/${project.slug}`,
+    url: `https://cullum.co/work/${project.slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.8,
@@ -11,25 +11,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
-      url: 'https://scullum.com',
+      url: 'https://cullum.co',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 1,
     },
     {
-      url: 'https://scullum.com/about',
+      url: 'https://cullum.co/about',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.9,
     },
     {
-      url: 'https://scullum.com/services',
+      url: 'https://cullum.co/services',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.9,
     },
     {
-      url: 'https://scullum.com/work',
+      url: 'https://cullum.co/work',
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.95,

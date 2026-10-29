@@ -3,7 +3,7 @@
 import { homePage } from '@/data/content';
 import { motion } from 'framer-motion';
 
-export function HowIHelp() {
+export function HowWeHelp() {
   return (
     <section className="bg-orange-600 border-b-2 border-orange-700 px-8 py-20 text-white">
       <div className="max-w-7xl mx-auto">
@@ -15,10 +15,10 @@ export function HowIHelp() {
             transition={{ duration: 0.5 }}
             className="text-sm uppercase tracking-[0.2em] text-white/70 mb-8 font-semibold"
           >
-            {homePage.howIHelp.heading}
+            {homePage.howWeHelp.heading}
           </motion.h2>
           <div className="grid md:grid-cols-3 gap-16">
-            {homePage.howIHelp.items.map((item, index) => (
+            {homePage.howWeHelp.items.map((item, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 30 }}

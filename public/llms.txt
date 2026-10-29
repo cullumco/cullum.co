@@ -1,22 +1,24 @@
-# Scott Cullum
+# Cullum & Co
 
-> Scott Cullum is a creative technologist who helps teams cut through ambiguity and move the work forward. His work sits across design, engineering, and product, bridging conversations that often slow progress.
+> Cullum & Co is Scott Cullum's creative technology practice, helping teams cut through ambiguity and move the work forward across design, engineering, and product.
 
-Scott works in an AI-native way — faster exploration, fewer wasted cycles. Most clients bring him in part-time for senior direction and hands-on support; when a project needs more depth, he works with a small network of trusted collaborators.
+Most engagements bring Scott in part-time for senior direction and hands-on support. A small network of trusted collaborators joins when the work needs additional depth. The practice uses AI-native tools for faster exploration and fewer wasted cycles.
 
-## How he helps
+## How we help
 
-- Advisory support for product and technology leaders
-- AI-native prototyping and technical exploration
-- Capability building for teams adopting modern workflows
+- Fractional advisory for product and technology leaders
+- AI-native exploration and prototyping
+- Capability support for teams adopting modern workflows
+- Technical direction across front-end architecture and experience quality
+- Flexible team support through trusted collaborators
 
 ## Pages
 
-- [About](https://scullum.com/about): background and approach
-- [Services](https://scullum.com/services): engagement models and offerings
-- [Work](https://scullum.com/work): selected projects and case studies
+- [About Cullum & Co](https://cullum.co/about): the practice, Scott's biography, and his career experience
+- [Services](https://cullum.co/services): engagement models and offerings
+- [Work](https://cullum.co/work): Cullum & Co projects alongside Scott's work at World Wide Technology and AKQA; case studies retain their original organization and his account of his contribution
 
 ## Contact
 
 - Email: scott@cullum.co
-- [LinkedIn](https://www.linkedin.com/in/scullum/)
+- [Scott on LinkedIn](https://www.linkedin.com/in/scullum/)
