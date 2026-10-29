@@ -1,5 +1,5 @@
 import { Home } from './components/Home';
-import { HowWeHelp } from './components/HowWeHelp';
+import { HowIHelp } from './components/HowIHelp';
 import { Work } from './components/Work';
 import { Footer } from './components/Footer';
 import { Navigation } from './components/Navigation';
@@ -10,7 +10,7 @@ export default function Page() {
       <Navigation />
       <main id="main-content">
         <Home />
-        <HowWeHelp />
+        <HowIHelp />
         <Work />
       </main>
       <Footer />

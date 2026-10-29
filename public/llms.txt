@@ -1,10 +1,10 @@
-# Cullum & Co
+# Cullum & Co — Scott Cullum
 
-> Cullum & Co is Scott Cullum's creative technology practice, helping teams cut through ambiguity and move the work forward across design, engineering, and product.
+> I'm Scott Cullum. Cullum & Co is my practice. I work across design, engineering, and product, combining creative instincts and technical judgment with hands-on building.
 
-Most engagements bring Scott in part-time for senior direction and hands-on support. A small network of trusted collaborators joins when the work needs additional depth. The practice uses AI-native tools for faster exploration and fewer wasted cycles.
+I help teams decide what's worth making, test ideas early, and turn them into working products. Most clients bring me in part-time for senior direction and hands-on support. I stay close to the work, bringing in trusted collaborators and using AI agents when the engagement calls for them.
 
-## How we help
+## How I help
 
 - Fractional advisory for product and technology leaders
 - AI-native exploration and prototyping
@@ -14,9 +14,9 @@ Most engagements bring Scott in part-time for senior direction and hands-on supp
 
 ## Pages
 
-- [About Cullum & Co](https://cullum.co/about): the practice, Scott's biography, and his career experience
+- [About me](https://cullum.co/about): my practice, biography, and career experience
 - [Services](https://cullum.co/services): engagement models and offerings
-- [Work](https://cullum.co/work): Cullum & Co projects alongside Scott's work at World Wide Technology and AKQA; case studies retain their original organization and his account of his contribution
+- [Work](https://cullum.co/work): my Cullum & Co projects and work at World Wide Technology and AKQA, with the original organization credits and my account of each contribution
 
 ## Contact
 

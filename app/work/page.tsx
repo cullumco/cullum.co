@@ -6,13 +6,13 @@ import { Footer } from '@/app/components/Footer';
 
 export const metadata = {
   title: 'Work - Cullum & Co',
-  description: 'Selected Cullum & Co projects and Scott Cullum’s work at World Wide Technology and AKQA, spanning design, engineering, and product.',
+  description: 'My work across design, engineering, and product, including Cullum & Co projects and my contributions at World Wide Technology and AKQA.',
   alternates: {
     canonical: 'https://cullum.co/work',
   },
   openGraph: {
     title: 'Work - Cullum & Co',
-    description: 'Selected Cullum & Co projects and Scott Cullum’s work at World Wide Technology and AKQA, spanning design, engineering, and product.',
+    description: 'My work across design, engineering, and product, including Cullum & Co projects and my contributions at World Wide Technology and AKQA.',
     url: 'https://cullum.co/work',
     siteName: 'Cullum & Co',
     locale: 'en_US',
@@ -22,15 +22,15 @@ export const metadata = {
         url: '/og.png',
         width: 1200,
         height: 630,
-        alt: 'Cullum & Co - Work',
+        alt: 'Cullum & Co - Scott Cullum, creative technology and fractional advisory',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Work - Cullum & Co',
-    description: 'Selected Cullum & Co projects and Scott Cullum’s work at World Wide Technology and AKQA, spanning design, engineering, and product.',
-    images: ['/og.png'],
+    description: 'My work across design, engineering, and product, including Cullum & Co projects and my contributions at World Wide Technology and AKQA.',
+    images: [{ url: '/og.png', alt: 'Cullum & Co - Scott Cullum, creative technology and fractional advisory' }],
   },
 };
 

@@ -6,13 +6,13 @@ import Image from 'next/image';
 
 export const metadata = {
   title: 'About - Cullum & Co',
-  description: 'Meet Cullum & Co, the creative technology practice led by Scott Cullum, and explore his experience across design, engineering, and strategy.',
+  description: "I'm Scott Cullum. Read about the experience, creative instincts, and technical judgment I bring to my practice, Cullum & Co.",
   alternates: {
     canonical: 'https://cullum.co/about',
   },
   openGraph: {
     title: 'About - Cullum & Co',
-    description: 'Meet Cullum & Co, the creative technology practice led by Scott Cullum, and explore his experience across design, engineering, and strategy.',
+    description: "I'm Scott Cullum. Read about the experience, creative instincts, and technical judgment I bring to my practice, Cullum & Co.",
     url: 'https://cullum.co/about',
     siteName: 'Cullum & Co',
     locale: 'en_US',
@@ -22,15 +22,15 @@ export const metadata = {
         url: '/og.png',
         width: 1200,
         height: 630,
-        alt: 'Cullum & Co - Creative technology and fractional advisory',
+        alt: 'Cullum & Co - Scott Cullum, creative technology and fractional advisory',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'About - Cullum & Co',
-    description: 'Meet Cullum & Co, the creative technology practice led by Scott Cullum, and explore his experience across design, engineering, and strategy.',
-    images: [{ url: '/og.png', alt: 'Cullum & Co - Creative technology and fractional advisory' }],
+    description: "I'm Scott Cullum. Read about the experience, creative instincts, and technical judgment I bring to my practice, Cullum & Co.",
+    images: [{ url: '/og.png', alt: 'Cullum & Co - Scott Cullum, creative technology and fractional advisory' }],
   },
 };
 

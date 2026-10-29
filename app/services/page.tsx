@@ -4,13 +4,13 @@ import { Footer } from '@/app/components/Footer';
 
 export const metadata = {
   title: 'Services - Cullum & Co',
-  description: 'Fractional advisory, AI-native prototyping, capability support, and technical direction for teams that need senior guidance.',
+  description: 'I offer fractional advisory, AI-native prototyping, capability support, and technical direction through my practice, Cullum & Co.',
   alternates: {
     canonical: 'https://cullum.co/services',
   },
   openGraph: {
     title: 'Services - Cullum & Co',
-    description: 'Fractional advisory, AI-native prototyping, capability support, and technical direction for teams that need senior guidance.',
+    description: 'I offer fractional advisory, AI-native prototyping, capability support, and technical direction through my practice, Cullum & Co.',
     url: 'https://cullum.co/services',
     siteName: 'Cullum & Co',
     locale: 'en_US',
@@ -20,15 +20,15 @@ export const metadata = {
         url: '/og.png',
         width: 1200,
         height: 630,
-        alt: 'Cullum & Co - Services',
+        alt: 'Cullum & Co - Scott Cullum, creative technology and fractional advisory',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Services - Cullum & Co',
-    description: 'Fractional advisory, AI-native prototyping, capability support, and technical direction for teams that need senior guidance.',
-    images: ['/og.png'],
+    description: 'I offer fractional advisory, AI-native prototyping, capability support, and technical direction through my practice, Cullum & Co.',
+    images: [{ url: '/og.png', alt: 'Cullum & Co - Scott Cullum, creative technology and fractional advisory' }],
   },
 };
 

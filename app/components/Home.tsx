@@ -71,7 +71,7 @@ export function Home() {
               href="/about"
               className="inline-block text-sm uppercase tracking-wide font-medium border-b-2 border-white hover:border-white/70 hover:text-white/70 transition-colors pb-1"
             >
-              About the practice
+              More about me
             </a>
           </motion.div>
         </div>

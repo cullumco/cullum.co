@@ -13,14 +13,14 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: 'Cullum & Co - Creative Technology & Fractional Advisory',
-  description: 'Creative technology, fractional advisory, and AI-native prototyping. A practice led by Scott Cullum, with trusted collaborators joining as the work requires.',
+  title: 'Cullum & Co - Scott Cullum, Creative Technologist',
+  description: siteMeta.tagline,
   metadataBase: new URL(siteMeta.url),
   alternates: {
     canonical: siteMeta.url,
   },
   openGraph: {
-    title: 'Cullum & Co - Creative Technology & Fractional Advisory',
+    title: 'Cullum & Co - Scott Cullum, Creative Technologist',
     description: siteMeta.tagline,
     url: siteMeta.url,
     siteName: siteMeta.name,
@@ -31,15 +31,15 @@ export const metadata: Metadata = {
         url: '/og.png',
         width: 1200,
         height: 630,
-        alt: 'Cullum & Co - Creative technology and fractional advisory',
+        alt: 'Cullum & Co - Scott Cullum, creative technology and fractional advisory',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Cullum & Co - Creative Technology & Fractional Advisory',
+    title: 'Cullum & Co - Scott Cullum, Creative Technologist',
     description: siteMeta.tagline,
-    images: [{ url: '/og.png', alt: 'Cullum & Co - Creative technology and fractional advisory' }],
+    images: [{ url: '/og.png', alt: 'Cullum & Co - Scott Cullum, creative technology and fractional advisory' }],
   },
 };
 

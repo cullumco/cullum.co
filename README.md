@@ -1,6 +1,6 @@
 # Cullum & Co
 
-The Cullum & Co practice website, built with Next.js 14, showcasing services in creative technology, design, engineering, and AI-native product development. Case studies include Cullum & Co projects and Scott Cullum's work at their credited organizations.
+Scott Cullum's practice website, branded Cullum & Co and built with Next.js 14. The site keeps Scott's first-person voice, experience, and judgment central, with trusted collaborators and AI agents joining when the work calls for them. Case studies include his Cullum & Co projects and work at their credited organizations.
 
 ## 🚀 Quick Start
 
@@ -66,7 +66,7 @@ npm run typecheck  # Type check without building
 
 - **Main Page** (`/`): Single-page scroll with sections:
   - Home (hero section with orange background)
-  - "How we help" (full-width orange section)
+  - "How I help" (full-width orange section)
   - Work (project previews)
   - Contact
 

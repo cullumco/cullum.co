@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is the Next.js-based Cullum & Co practice website (cullum.co), built with TypeScript, React, and Tailwind CSS. The site showcases professional services in design, engineering, and AI-native product development. Preserve Scott Cullum's biography, personal career history, and credited contributions to historical case studies.
+This is Scott Cullum's practice website, branded Cullum & Co (cullum.co), built with Next.js, TypeScript, React, and Tailwind CSS. Keep Scott visibly central and use his first-person voice for his experience, judgment, services, and work. Cullum & Co is his practice, extended by trusted collaborators and AI agents when needed. Preserve his biography, personal career history, and credited contributions to historical case studies.
 
 ## Technology Stack
 
@@ -73,7 +73,7 @@ All site content is centralized in a single file for easy updates:
 - **data/content.ts**: Single source of truth containing:
   - `siteMeta`: Site-wide metadata (name, email, social links)
   - `nav`: Navigation links
-  - `homePage`: Hero content and "How we help" items
+  - `homePage`: Hero content and "How I help" items
   - `aboutPage`: Narrative sections about background and approach
   - `servicesPage`: Detailed service offerings with structured content
   - `workPage`: Project previews and full case study content

@@ -2,7 +2,7 @@
 
 export const siteMeta = {
   name: "Cullum & Co",
-  tagline: "A creative technology practice helping teams cut through ambiguity and move the work forward.",
+  tagline: "I'm Scott Cullum. Cullum & Co is my practice across design, engineering, and product, with trusted collaborators and AI agents when the work calls for them.",
   url: "https://cullum.co",
   email: "scott@cullum.co",
   social: {
@@ -22,19 +22,19 @@ export const nav = [
 export const homePage = {
   hero: {
     title: "Cullum & Co",
-    subtitle: "We help teams cut through ambiguity and move the work forward.",
+    subtitle: "I'm Scott Cullum. I help teams cut through ambiguity and move the work forward.",
     body: [
-      "Cullum & Co is Scott Cullum's creative technology practice. We work across design, engineering, and product to help teams make better decisions and turn early ideas into working products.",
-      "We use AI-native tools for faster exploration and fewer wasted cycles.",
-      "Most engagements bring Scott in part-time for senior direction and hands-on support. When a project needs more depth, a small network of trusted collaborators joins the work.",
+      "Cullum & Co is my practice. I work across design, engineering, and product, combining creative instincts and technical judgment with hands-on building.",
+      "I help teams decide what's worth making, test ideas early, and turn them into working products. I stay close to the work, from shaping the direction to building and refining the details.",
+      "Most clients bring me in part-time for senior direction and hands-on support. I bring in trusted collaborators and use AI agents when the work calls for them.",
     ],
     cta: {
       label: "View work",
       href: "/work",
     },
   },
-  howWeHelp: {
-    heading: "How we help",
+  howIHelp: {
+    heading: "How I help",
     items: [
       "Advisory support for product and technology leaders",
       "AI-native prototyping and technical exploration",
@@ -49,18 +49,18 @@ export const aboutPage = {
   hero: {
     kicker: "",
     title: "About Cullum & Co",
-    subtitle: "A creative technology practice led by Scott Cullum.",
+    subtitle: "I'm Scott Cullum. Cullum & Co is my practice.",
   },
   sections: [
     {
-      heading: "The practice",
+      heading: "Scott Cullum",
       body: [
-        "Cullum & Co brings senior guidance and hands-on support to teams working across product, design, and engineering. The practice is led by Scott Cullum, with trusted collaborators joining when an engagement calls for additional depth.",
-        "We work flexibly so organizations can access senior experience without adding another full-time leader. AI-native tools help us explore ideas and test assumptions earlier, with judgment and craft guiding the work.",
+        "I work across design, engineering, and product, bringing creative instincts and technical judgment to the decisions between an early idea and a working product.",
+        "Cullum & Co gives me room to bring trusted collaborators and AI agents into an engagement when another perspective or extra capability will help. I stay involved in the direction and the details.",
       ],
     },
     {
-      heading: "Scott Cullum",
+      heading: "Background and approach",
       body: [
         "I've spent more than twenty years in roles that sit between design, engineering, and strategy. That range shaped how I approach the work: teams rarely struggle because of technology alone. They struggle because direction is unclear, handoffs are slow, and ideas stay abstract for too long.",
         "I focus on the middle space where creativity, constraints, and clarity intersect. It is where decisions either get made or stall. My job is to help teams see their options earlier and move in a direction they trust.",
@@ -78,9 +78,9 @@ export const servicesPage = {
   hero: {
     title: "Services",
     intro: [
-      "Cullum & Co works with organizations that need senior guidance across product, design, and engineering without adding another full-time leader.",
-      "Most engagements bring Scott in part-time for clarity, direction, and hands-on support. When a project benefits from added depth, he brings in trusted collaborators he has worked with for years.",
-      "AI-native tools are part of how we work. They shorten timelines and improve exploration, helping teams make better decisions.",
+      "I work with organizations that need senior guidance across product, design, and engineering without adding another full-time leader.",
+      "Most clients bring me in part-time to help set direction, make technical decisions, and turn ideas into prototypes their teams can use.",
+      "I use AI-native tools and agents where they help me explore, prototype, and build. When an engagement needs another perspective or specialist skill, I bring in trusted collaborators.",
     ],
   },
   services: [
@@ -106,7 +106,7 @@ export const servicesPage = {
       name: "AI-Native Exploration & Prototyping",
       summary: "Move from idea to clarity faster.",
       description: [
-        "AI-native engineering allows exploration of multiple directions in parallel, pressure-testing assumptions, and producing tangible artifacts earlier in the process. The goal is sharper thinking, not inflated output.",
+        "I use AI-native tools and agents to explore possible directions, test assumptions, and build prototypes early enough to inform a decision.",
       ],
       whatThisIncludes: [
         "Prototypes and proofs of concept",
@@ -123,7 +123,7 @@ export const servicesPage = {
       name: "Capability Support",
       summary: "Better ways of working for modern teams.",
       description: [
-        "Many teams know they can move faster, but the bottlenecks are not always obvious. We help identify the friction, simplify workflows, and integrate AI-native tools in ways that make sense.",
+        "Many teams know they can move faster, but the bottlenecks are not always obvious. I help identify the friction, simplify workflows, and integrate AI-native tools in ways that make sense.",
       ],
       whatThisIncludes: [
         "Workflow and process improvements",
@@ -140,7 +140,7 @@ export const servicesPage = {
       name: "Technical Direction",
       summary: "Hands-on technical leadership focused on front-end and experience quality.",
       description: [
-        "We help teams make sound technical decisions early, support design partners, and set a path that holds up once real users arrive.",
+        "I help teams make sound technical decisions early, support design partners, and set a path that holds up once real users arrive.",
       ],
       whatThisIncludes: [
         "Front-end architecture and planning",
@@ -157,7 +157,7 @@ export const servicesPage = {
       name: "Flexible Team Support",
       summary: "A trusted network that can scale with the work.",
       description: [
-        "When the engagement calls for it, Scott brings in a small network of trusted designers, engineers, and specialists. This keeps the work lightweight, scalable, and grounded in senior experience.",
+        "When an engagement needs more depth, I bring in designers, engineers, and specialists I've worked with before, matching their experience to what the work needs.",
       ],
       whatThisIncludes: [],
       goodFor: [],
@@ -171,9 +171,9 @@ export const workPage = {
   hero: {
     title: "Work",
     intro: [
-      "Selected Cullum & Co projects, alongside Scott Cullum's work at World Wide Technology and AKQA. Scott brings more than two decades of experience shaping prototypes, platforms, and experiences for early-stage teams and global enterprises.",
+      "I have spent more than two decades working across design, engineering, and product, shaping prototypes, platforms, and experiences for organizations ranging from early-stage teams to global enterprises.",
       "The work here follows a consistent pattern: complex problems, interdisciplinary teams, and the need to turn ideas into something tangible early.",
-      "Scott's role shifts with each engagement: creative technologist, product partner, technical lead, or senior advisor. The aim stays the same: make the work clear, reduce friction, and move it forward.",
+      "My role shifts based on the engagement — creative technologist, product partner, technical lead, senior advisor — but the throughline is the same: make the work clear, reduce friction, and move it forward.",
     ],
   },
   projects: [
@@ -373,7 +373,7 @@ export const workPage = {
 
 export const timelinePage = {
   hero: {
-    title: "Scott's experience",
+    title: "Experience",
     subtitle: "More than two decades building, leading, and shaping the space between design, engineering, and strategy.",
   },
   timeline: [
@@ -502,7 +502,7 @@ export const timelinePage = {
 export const footer = {
   heading: "Get in touch",
   email: "scott@cullum.co",
-  linkedinLabel: "Scott on LinkedIn →",
+  linkedinLabel: "LinkedIn →",
   availability: "Currently accepting select engagements for 2026.",
-  tagline: "Cullum & Co — a creative technology practice helping teams cut through ambiguity and move the work forward.",
+  tagline: "Cullum & Co is my practice. I'm Scott Cullum, a creative technologist working across design, engineering, and product.",
 };
