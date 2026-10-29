@@ -114,6 +114,6 @@ All rights reserved © 2026 Cullum & Co
 
 ## Brand assets
 
-`public/images/cullum-and-co-wordmark.png` is the original, unmodified transparent wordmark supplied for the Studio One deck (2018 × 779). Keep its aspect ratio and colors, and display it on a light background.
+`public/images/cullum-and-co-wordmark.png` is the original, unmodified transparent wordmark supplied for the Studio One deck (2018 × 779). Keep its aspect ratio and letterforms. The `Wordmark` component uses its exact alpha as a CSS mask: white on the orange hero, and the site's `orange-600` on light navigation and footer backgrounds. The original scroll handoff reveals the header mark after 100px; opening the mobile menu also reveals it. Forced-color mode uses the system text color.
 
-Run `node scripts/generate-brand-assets.mjs` to regenerate the social sharing card and PNG icons from that same artwork using Next.js ImageResponse. The headshot and historical project images remain in their original contexts.
+Run `node scripts/generate-brand-assets.mjs` to regenerate the orange logo metadata asset, social sharing card, and reversed PNG icons from that same alpha mask using Next.js ImageResponse. The generator resolves the site's actual Tailwind orange token. The headshot and historical project images remain in their original contexts.

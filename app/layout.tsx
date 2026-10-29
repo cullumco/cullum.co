@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Manrope } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
 import { siteMeta } from '@/data/content';
+import wordmark from '@/public/images/cullum-and-co-wordmark.png';
 import './globals.css';
 
 const manrope = Manrope({
@@ -57,7 +58,7 @@ export default function RootLayout({
         url: siteMeta.url,
         description: siteMeta.tagline,
         email: siteMeta.email,
-        logo: `${siteMeta.url}/images/cullum-and-co-wordmark.png`,
+        logo: `${siteMeta.url}/images/cullum-and-co-wordmark-orange.png`,
         member: { '@id': `${siteMeta.url}/about#scott-cullum` },
       },
       {
@@ -81,6 +82,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="preload" as="image" href={wordmark.src} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

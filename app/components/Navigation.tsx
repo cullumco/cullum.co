@@ -11,6 +11,7 @@ export function Navigation() {
   const pathname = usePathname();
   const isHomePage = pathname === '/';
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [showWordmark, setShowWordmark] = useState(!isHomePage);
   const [activeSection, setActiveSection] = useState<string>('');
 
   useEffect(() => {
@@ -40,6 +41,24 @@ export function Navigation() {
     return () => observer.disconnect();
   }, [isHomePage]);
 
+  useEffect(() => {
+    if (!isHomePage) {
+      setShowWordmark(true);
+      return;
+    }
+
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setShowWordmark(true);
+        window.removeEventListener('scroll', handleScroll);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [isHomePage]);
+
   const isLinkActive = (href: string) => {
     if (activeSection === '#contact') return false;
     if (href === '/work') return pathname === '/work' || pathname.startsWith('/work/');
@@ -64,10 +83,12 @@ export function Navigation() {
           <Link
             href="/"
             aria-label={`${siteMeta.name} home`}
-            className="shrink-0 rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-orange-600"
+            aria-hidden={!showWordmark && !mobileMenuOpen}
+            tabIndex={showWordmark || mobileMenuOpen ? undefined : -1}
+            className={`shrink-0 rounded-sm transition-opacity duration-300 motion-reduce:transition-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-orange-600 ${showWordmark || mobileMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
             onClick={handleLinkClick}
           >
-            <Wordmark priority />
+            <Wordmark />
           </Link>
 
           {/* Desktop Navigation */}
