@@ -13,7 +13,7 @@ export function Footer() {
           <div className="space-y-4">
             <a
               href={`mailto:${footer.email}`}
-              className="text-3xl md:text-4xl text-orange-600 hover:text-orange-700 transition-colors inline-block break-all"
+              className="text-2xl sm:text-3xl md:text-4xl text-orange-600 hover:text-orange-700 transition-colors inline-block break-all"
             >
               {footer.email}
             </a>

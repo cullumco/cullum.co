@@ -14,11 +14,11 @@ I help teams decide what's worth making, test ideas early, and turn them into wo
 
 ## Pages
 
-- [About me](https://cullum.co/about): my practice, biography, and career experience
-- [Services](https://cullum.co/services): engagement models and offerings
-- [Work](https://cullum.co/work): my Cullum & Co projects and work at World Wide Technology and AKQA, with the original organization credits and my account of each contribution
+- [About me](https://cullumandco.com/about): my practice, biography, and career experience
+- [Services](https://cullumandco.com/services): engagement models and offerings
+- [Work](https://cullumandco.com/work): my Cullum & Co projects and work at World Wide Technology and AKQA, with the original organization credits and my account of each contribution
 
 ## Contact
 
-- Email: scott@cullum.co
+- Email: scott@cullumandco.com
 - [Scott on LinkedIn](https://www.linkedin.com/in/scullum/)

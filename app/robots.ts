@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next';
+import { siteMeta } from '@/data/content';
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -6,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://cullum.co/sitemap.xml',
+    sitemap: `${siteMeta.url}/sitemap.xml`,
   };
 }

@@ -56,7 +56,7 @@ await render('public/og.png', 1200, 630,
   logoImage(900),
   h('div', { style: { fontSize: 38, marginTop: 18 } }, 'Scott Cullum'),
   h('div', { style: { fontSize: 26, marginTop: 8 } }, 'Creative technology & fractional advisory'),
-  h('div', { style: { fontSize: 25, color: colors.orange[700], marginTop: 20 } }, 'cullum.co')),
+  h('div', { style: { fontSize: 25, color: colors.orange[700], marginTop: 20 } }, 'cullumandco.com')),
 );
 
 for (const [path, size] of [['app/icon.png', 96], ['app/apple-icon.png', 180]]) {

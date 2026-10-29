@@ -1,4 +1,4 @@
-import { workPage } from '@/data/content';
+import { workPage, siteMeta } from '@/data/content';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: PageProps) {
     };
   }
 
-  const url = `https://cullum.co/work/${project.slug}`;
+  const url = `${siteMeta.url}/work/${project.slug}`;
   const imageUrl = project.image || '/og.png';
 
   return {
@@ -75,14 +75,14 @@ export default function ProjectPage({ params }: PageProps) {
     author: {
       '@type': 'Person',
       name: 'Scott Cullum',
-      '@id': 'https://cullum.co/about#scott-cullum',
-      url: 'https://cullum.co/about',
+      '@id': `${siteMeta.url}/about#scott-cullum`,
+      url: `${siteMeta.url}/about`,
     },
     publisher: {
       '@type': 'Organization',
       name: project.company,
     },
-    url: `https://cullum.co/work/${project.slug}`,
+    url: `${siteMeta.url}/work/${project.slug}`,
     image: project.image,
   };
 

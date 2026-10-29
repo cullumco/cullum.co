@@ -3,8 +3,8 @@
 export const siteMeta = {
   name: "Cullum & Co",
   tagline: "I'm Scott Cullum. Cullum & Co is my practice across design, engineering, and product, with trusted collaborators and AI agents when the work calls for them.",
-  url: "https://cullum.co",
-  email: "scott@cullum.co",
+  url: "https://cullumandco.com",
+  email: "scott@cullumandco.com",
   social: {
     linkedin: "https://www.linkedin.com/in/scullum/",
   },
@@ -501,7 +501,7 @@ export const timelinePage = {
 
 export const footer = {
   heading: "Get in touch",
-  email: "scott@cullum.co",
+  email: siteMeta.email,
   linkedinLabel: "LinkedIn →",
   availability: "Currently accepting select engagements for 2026.",
   tagline: "Cullum & Co is my practice. I'm Scott Cullum, a creative technologist working across design, engineering, and product.",

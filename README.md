@@ -2,6 +2,8 @@
 
 Scott Cullum's practice website, branded Cullum & Co and built with Next.js 14. The site keeps Scott's first-person voice, experience, and judgment central, with trusted collaborators and AI agents joining when the work calls for them. Case studies include his Cullum & Co projects and work at their credited organizations.
 
+Canonical site: https://cullumandco.com. Current contact: scott@cullumandco.com. Page metadata, structured data, sitemap, and robots use the URL in `siteMeta`; the footer uses its email address.
+
 ## 🚀 Quick Start
 
 ```bash

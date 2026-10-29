@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is Scott Cullum's practice website, branded Cullum & Co (cullum.co), built with Next.js, TypeScript, React, and Tailwind CSS. Keep Scott visibly central and use his first-person voice for his experience, judgment, services, and work. Cullum & Co is his practice, extended by trusted collaborators and AI agents when needed. Preserve his biography, personal career history, and credited contributions to historical case studies.
+This is Scott Cullum's practice website, branded Cullum & Co (cullumandco.com), built with Next.js, TypeScript, React, and Tailwind CSS. Keep Scott visibly central and use his first-person voice for his experience, judgment, services, and work. Cullum & Co is his practice, extended by trusted collaborators and AI agents when needed. Preserve his biography, personal career history, and credited contributions to historical case studies.
 
 ## Technology Stack
 
@@ -107,7 +107,7 @@ Both development and production servers are explicitly configured to run on port
 - Open Graph and Twitter Card metadata configured
 - Dynamic robots.txt via app/robots.ts
 - Dynamic sitemap.xml via app/sitemap.ts
-- metadataBase set to https://cullum.co
+- metadataBase set from siteMeta.url (https://cullumandco.com)
 
 ## Routing Structure
 

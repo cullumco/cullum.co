@@ -1,4 +1,4 @@
-import { servicesPage } from '@/data/content';
+import { servicesPage, siteMeta } from '@/data/content';
 import { Navigation } from '@/app/components/Navigation';
 import { Footer } from '@/app/components/Footer';
 
@@ -6,12 +6,12 @@ export const metadata = {
   title: 'Services - Cullum & Co',
   description: 'I offer fractional advisory, AI-native prototyping, capability support, and technical direction through my practice, Cullum & Co.',
   alternates: {
-    canonical: 'https://cullum.co/services',
+    canonical: `${siteMeta.url}/services`,
   },
   openGraph: {
     title: 'Services - Cullum & Co',
     description: 'I offer fractional advisory, AI-native prototyping, capability support, and technical direction through my practice, Cullum & Co.',
-    url: 'https://cullum.co/services',
+    url: `${siteMeta.url}/services`,
     siteName: 'Cullum & Co',
     locale: 'en_US',
     type: 'website',

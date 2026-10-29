@@ -1,4 +1,4 @@
-import { workPage } from '@/data/content';
+import { workPage, siteMeta } from '@/data/content';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Navigation } from '@/app/components/Navigation';
@@ -8,12 +8,12 @@ export const metadata = {
   title: 'Work - Cullum & Co',
   description: 'My work across design, engineering, and product, including Cullum & Co projects and my contributions at World Wide Technology and AKQA.',
   alternates: {
-    canonical: 'https://cullum.co/work',
+    canonical: `${siteMeta.url}/work`,
   },
   openGraph: {
     title: 'Work - Cullum & Co',
     description: 'My work across design, engineering, and product, including Cullum & Co projects and my contributions at World Wide Technology and AKQA.',
-    url: 'https://cullum.co/work',
+    url: `${siteMeta.url}/work`,
     siteName: 'Cullum & Co',
     locale: 'en_US',
     type: 'website',
