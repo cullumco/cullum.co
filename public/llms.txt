@@ -2,7 +2,7 @@
 
 > I'm Scott Cullum, a creative technologist and hands-on technical leader. I help teams turn early ideas into working products.
 
-Cullum & Co is my practice. I shape the experience, build prototypes to test difficult ideas, and guide the technical decisions behind delivery.
+I shape the experience, build prototypes to test difficult ideas, and guide the technical decisions behind delivery.
 
 ## How I help
 
@@ -12,7 +12,7 @@ Cullum & Co is my practice. I shape the experience, build prototypes to test dif
 
 ## How engagements work
 
-I usually work part-time as a fractional partner, combining advisory support with hands-on work. I use AI tools and agents where they help me explore and build, and bring in trusted collaborators when an engagement needs more depth.
+Cullum & Co is my practice. I usually work part-time as a fractional partner, combining advisory support with hands-on work. I use AI tools and agents where they help me explore and build, and bring in trusted collaborators when an engagement needs more depth.
 
 ## Pages
 
@@ -21,6 +21,8 @@ I usually work part-time as a fractional partner, combining advisory support wit
 - [Work](https://cullumandco.com/work): my Cullum & Co projects and work at World Wide Technology and AKQA, with the original organization credits and my account of each contribution
 
 ## Contact
+
+Tell me what you're trying to make, where you're stuck, and what kind of help would be useful. Include any timeline you have in mind.
 
 - Email: scott@cullumandco.com
 - [Scott on LinkedIn](https://www.linkedin.com/in/scullum/)

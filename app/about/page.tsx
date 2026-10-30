@@ -6,13 +6,13 @@ import Image from 'next/image';
 
 export const metadata = {
   title: 'About - Cullum & Co',
-  description: "I'm Scott Cullum. Read about the experience, creative instincts, and technical judgment I bring to my practice, Cullum & Co.",
+  description: "I'm Scott Cullum. My approach grew from web design and development into creative technology and engineering leadership at Under Armour, AKQA, Red Antler, and WWT.",
   alternates: {
     canonical: `${siteMeta.url}/about`,
   },
   openGraph: {
     title: 'About - Cullum & Co',
-    description: "I'm Scott Cullum. Read about the experience, creative instincts, and technical judgment I bring to my practice, Cullum & Co.",
+    description: "I'm Scott Cullum. My approach grew from web design and development into creative technology and engineering leadership at Under Armour, AKQA, Red Antler, and WWT.",
     url: `${siteMeta.url}/about`,
     siteName: 'Cullum & Co',
     locale: 'en_US',
@@ -29,7 +29,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'About - Cullum & Co',
-    description: "I'm Scott Cullum. Read about the experience, creative instincts, and technical judgment I bring to my practice, Cullum & Co.",
+    description: "I'm Scott Cullum. My approach grew from web design and development into creative technology and engineering leadership at Under Armour, AKQA, Red Antler, and WWT.",
     images: [{ url: '/og.png', alt: 'Cullum & Co - Scott Cullum, creative technology and fractional advisory' }],
   },
 };

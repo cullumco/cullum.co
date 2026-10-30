@@ -67,6 +67,8 @@ export default function ProjectPage({ params }: PageProps) {
     notFound();
   }
 
+  const [introduction, ...sections] = project.sections;
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'CreativeWork',
@@ -129,6 +131,15 @@ export default function ProjectPage({ params }: PageProps) {
             )}
           </div>
 
+          {/* Establish the problem, contribution, and outcome before the media. */}
+          {introduction && (
+            <div className="space-y-6 text-lg text-neutral-700 leading-relaxed max-w-prose mb-16">
+              {introduction.body.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </div>
+          )}
+
           {/* Video player */}
           {project.videoUrl && (
             <div className="aspect-[16/9] relative bg-neutral-900 mb-16 -mx-8 md:mx-0">
@@ -158,24 +169,19 @@ export default function ProjectPage({ params }: PageProps) {
 
           {/* Project sections */}
           <div className="space-y-16">
-            {project.sections.map((section, index) => (
+            {sections.map((section, index) => (
               <div key={index}>
                 {section.heading && (
                   <h2 className="text-3xl font-semibold tracking-tight mb-4">
                     {section.heading}
                   </h2>
                 )}
-                {'subheading' in section && section.subheading && (
-                  <p className="text-xl text-neutral-700 mb-6 italic leading-relaxed">
-                    {section.subheading}
-                  </p>
-                )}
                 <div className="space-y-6 text-lg text-neutral-700 leading-relaxed max-w-prose">
                   {section.body.map((paragraph, pIndex) => (
                     <p key={pIndex}>{paragraph}</p>
                   ))}
                 </div>
-                {index < project.sections.length - 1 && (
+                {index < sections.length - 1 && (
                   <div className="h-px bg-neutral-200 mt-16"></div>
                 )}
               </div>

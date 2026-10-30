@@ -76,7 +76,7 @@ All site content is centralized in a single file for easy updates:
   - `homePage`: Hero content, "How I help" links, and curated featured-project slugs and summaries
   - `aboutPage`: Narrative sections about background and approach
   - `servicesPage`: Detailed service offerings with structured content
-  - `workPage`: Project previews and full case study content
+  - `workPage`: Project previews and full case study content; the first section introduces the problem, Scott's contribution, and supported result before the media, with the remaining sections providing detail
   - `footer`: Footer content
 
 This centralized approach allows content updates without touching component code. Components import only what they need from this file.

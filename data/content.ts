@@ -25,7 +25,7 @@ export const homePage = {
     subtitle: "I'm Scott Cullum. I help teams turn early ideas into working products.",
     body: [
       "I'm a creative technologist and hands-on technical leader. I shape the experience, build prototypes to test difficult ideas, and guide the technical decisions behind delivery.",
-      "Cullum & Co is my practice. I work directly with your team, bringing in trusted collaborators and AI agents when the work calls for them.",
+      "Cullum & Co is my practice, with room for trusted collaborators and AI agents when the work calls for them. You work directly with me.",
     ],
     cta: {
       label: "View work",
@@ -69,25 +69,24 @@ export const homePage = {
 export const aboutPage = {
   hero: {
     kicker: "",
-    title: "About Cullum & Co",
-    subtitle: "I'm Scott Cullum. Cullum & Co is my practice.",
+    title: "About Scott Cullum",
+    subtitle: "A background in design and a career in building.",
   },
   sections: [
     {
       heading: "Scott Cullum",
       body: [
-        "I work across design, engineering, and product, bringing creative instincts and technical judgment to the decisions between an early idea and a working product.",
-        "Cullum & Co gives me room to bring trusted collaborators and AI agents into an engagement when another perspective or extra capability will help. I stay involved in the direction and the details.",
+        "I started in web design and front-end development. My work grew from campaign and commerce sites at Under Armour to apps, platforms, and retail experiences at AKQA, then engineering leadership at Red Antler and creative technology at World Wide Technology.",
+        "I've stayed hands-on as the roles changed. The work has involved developing interactions with designers, building prototypes, leading engineering teams, and helping clients decide what to make.",
       ],
     },
     {
-      heading: "Background and approach",
+      heading: "What shaped my approach",
       body: [
-        "I've spent more than twenty years in roles that sit between design, engineering, and strategy. That range shaped how I approach the work: teams rarely struggle because of technology alone. They struggle because direction is unclear, handoffs are slow, and ideas stay abstract for too long.",
-        "I focus on the middle space where creativity, constraints, and clarity intersect. It is where decisions either get made or stall. My job is to help teams see their options earlier and move in a direction they trust.",
-        "AI-native tools have compressed the time it takes to explore ideas and test assumptions. They do not replace judgment or taste. They give you a way to bring those things into the process sooner.",
-        "I work flexibly so organizations can access senior experience without adding another full-time leader. I stay close to the work, and when an engagement needs more depth, I pull in people I have worked with before who can contribute quickly.",
-        "I am based near Washington, DC, and work remote with teams across the country.",
+        "On WWF Together at AKQA, I helped stabilize a project whose launch was at risk while partnering with design on the animal interactions. The job required attention to both the creative idea and the working relationship with the external developers. The team shipped an iPad experience that earned an Apple Design Award.",
+        "Verizon Express Store put the work in a physical setting. I led prototypes of kiosks and wall experiences, working through hardware constraints and connections to point-of-sale systems. We tested a full-scale store in the office and a warehouse before taking it into market.",
+        "At Red Antler, I worked with early-stage companies and lean teams, using prototypes to clarify expectations and modular systems when resources were limited. At World Wide Technology, I created Ignition Zero and Project AIR to support two different needs: testing product ideas and developing custom AI solutions.",
+        "That experience shapes how I work now. I build early enough to test the idea, work through the constraints with the people responsible for delivery, and stay involved as the details change. I'm based near Washington, DC, and work remotely with teams across the country.",
       ],
     },
   ],
@@ -181,7 +180,7 @@ export const workPage = {
       name: "Cadence",
       company: "Cullum & Co",
       tagline:
-        "An open-source ambient context layer that lets coding agents read the room, not just the prompt.",
+        "An open-source context layer that helps coding agents adapt to how you're working.",
       image: "/images/work/cadence/cadence.webp",
       externalUrl: "https://cullumco.github.io/cadence/",
       externalLabel: "Visit the Cadence site →",
@@ -189,9 +188,15 @@ export const workPage = {
         {
           heading: "",
           body: [
-            "Coding agents have one input channel: text. Your prompt doesn't say you're tired but still shipping, that you just got back from a long break, or that you want the agent to stop asking permission and make the call. Cadence is the second channel — an ambient context layer I'm building and shipping in the open as a Cullum & Co project.",
-            "It reads the room around the prompt: time, git state, prompt rhythm, music, Focus mode, and a self-reported state become visible context, distilled into four independent dials — pace, tone, posture, and proactivity. Every prompt then carries an inspectable state block plus a lens for reading what you meant. It's a lens, not a leash: it never rewrites your words or constrains the agent, and it always defers to what you actually typed.",
-            "The result is the same prompt landing differently in different rooms. In a shipping cadence, \"how should I structure the retry logic?\" gets the call made — backoff with jitter, here's the diff. In a thinking cadence, it gets the trade-offs explored patiently, no pressure to pick. The alpha ships as a Claude Code plugin, macOS-first because the signals read the Mac around you — but Claude Code is just the alpha surface. The product is the context layer underneath it.",
+            "A prompt can leave out how you want to work: whether you're exploring a decision, trying to ship, or returning after a break. I'm building Cadence to give coding agents that context, using signals from the work around the prompt.",
+            "I developed it in the open through Cullum & Co, with an alpha implemented as a macOS-first Claude Code plugin. It adds an inspectable context block to each prompt, describing pace, tone, posture, and proactivity while leaving your words intact.",
+          ],
+        },
+        {
+          heading: "Making the context visible",
+          body: [
+            "Time, git state, prompt rhythm, music, Focus mode, and a self-reported state inform four independent dials. You can inspect what the agent receives, and your explicit instructions take precedence.",
+            "The aim is to let the agent adjust its response to the situation. A question about retry logic might call for a concrete implementation when you're shipping, or a slower discussion of trade-offs when you're exploring. That is the behavior the context layer is designed to support.",
           ],
         },
       ],
@@ -201,7 +206,7 @@ export const workPage = {
       name: "Kettel",
       company: "Cullum & Co",
       tagline:
-        "An open-source workspace where strategy, creative, and technology think together before the agent builds.",
+        "A shared planning workspace for strategy, design, and engineering teams working with coding agents.",
       image: "/images/work/kettel/kettel.webp",
       externalUrl: "https://kettel.cullum.co",
       externalLabel: "Visit the Kettel site →",
@@ -209,9 +214,15 @@ export const workPage = {
         {
           heading: "",
           body: [
-            "Every team scaling AI-native delivery hits the same wall: the creative partnership that produces excellent work — the back-and-forth between strategy, creative, and technology — gets flattened into one person's conversation with an LLM. The rest of the team becomes a spectator. Intent gets lost. Craft gets diluted. Kettel is a Cullum & Co product, built in the open, that rebuilds the room.",
-            "Its core artifact is the plan file: structured markdown that lives in your git repo, where each section has an owner and each annotation has a perspective. Strategy writes intent, creative writes direction, technology writes approach — three voices attributed, three colors of ink. Upstream, a notebook holds research, customer quotes, and technical spikes as a linked graph rather than a folder, so the agent traverses connected thinking instead of a pile of files. The agent reads all of it and ships the synthesis, not just the last prompt.",
-            "The plan is also the handoff: self-contained enough for Claude Code, Cursor, or Windsurf to execute without needing access to Kettel at all. The model is open core — the plan file, notebook, and agent integration are free and open source, with the v0.1 web app live and an MCP server next on the roadmap. The plan file is the room. The code is downstream.",
+            "When a team's work moves into one person's conversation with a coding agent, the thinking behind it can become hard for everyone else to see or shape. Kettel gives strategy, design, and engineering a shared place to develop the plan before implementation.",
+            "Kettel is a product from my practice, Cullum & Co, developed in the open. Its central artifact is a structured Markdown plan in the team's git repository, with an owner for each section and attributed annotations. The plan can be handed to a coding agent without giving it access to Kettel.",
+          ],
+        },
+        {
+          heading: "Keeping the thinking with the handoff",
+          body: [
+            "Strategy contributes intent, design contributes direction, and engineering contributes the technical approach. A linked notebook holds research, customer quotes, and technical experiments so the agent can follow the relationships behind the plan.",
+            "The plan file, notebook, and agent integration are open source. The handoff is self-contained for tools such as Claude Code, Cursor, and Windsurf, so the team's reasoning can travel with the work.",
           ],
         },
       ],
@@ -221,31 +232,26 @@ export const workPage = {
       name: "Ignition Zero & Project AIR",
       company: "World Wide Technology",
       tagline:
-        "Two AI-native programs serving different needs: one accelerates exploration, the other delivers custom AI solutions.",
+        "Two programs I created at WWT for product exploration and custom AI solution development.",
       image: "/images/work/ignition/ignition-zero-project-air.avif",
       sections: [
         {
           heading: "",
           body: [
-            "Most organizations want to move faster with AI but do not know where to start. Some need help testing ideas quickly; others need help building tailored AI solutions that solve real business problems. I created two complementary programs to meet those needs: Ignition Zero and Project AIR.",
+            "At World Wide Technology, I created Ignition Zero and Project AIR for clients with different starting points. Some needed to test a product idea; others needed a custom AI model, workflow, or proof of concept.",
+            "I separated those needs into two programs. Ignition Zero uses early prototypes to support product decisions. Project AIR brings engineering, data, and technology partners together around feasibility and solution development.",
           ],
         },
         {
           heading: "Ignition Zero",
-          subheading:
-            "A lightweight, AI-native product acceleration model designed to move from ambiguity to clarity at speed.",
           body: [
-            "Ignition Zero helps teams explore product ideas quickly and get to something tangible in days, not weeks. It uses AI-native engineering to prototype multiple directions in parallel, tighten feedback loops, and reduce the friction that usually slows early product work.",
-            "It is intentionally lean: rapid intake, tight collaboration between design and engineering, and outputs that help stakeholders make decisions based on something real, not theoretical slides. Ignition Zero is about momentum — shrinking the gap between idea and evidence.",
+            "A short intake and close collaboration between design and engineering give the team a starting point for exploration. AI-assisted engineering supports prototypes of multiple directions in parallel, with feedback used to narrow the options. Stakeholders can review something working before committing to a direction.",
           ],
         },
         {
           heading: "Project AIR",
-          subheading:
-            "A structured AI solution-development program focused on building custom models, workflows, and POCs for clients.",
           body: [
-            "Project AIR takes the next step. When a client needs more than exploration — when they need a real AI solution, a working proof of concept, or a roadmap for adoption — AIR provides the framework. It brings together engineering, data, and partner ecosystems to design AI-driven capabilities grounded in feasibility and business value.",
-            "Where Ignition Zero answers 'What is possible?' AIR answers 'What should we build?' and 'How do we build it at scale in a responsible way?' Together, they create a modern AI-native operating model: fast enough for early exploration, structured enough for real delivery.",
+            "Project AIR provides a framework for developing custom models, workflows, and proofs of concept. Engineering, data, and partner expertise inform what is feasible and how a client could adopt the solution. The scope can include a working proof of concept or an adoption roadmap.",
           ],
         },
       ],
@@ -255,16 +261,21 @@ export const workPage = {
       name: "Real-Time AI Translation for a Defense Agency",
       company: "World Wide Technology",
       tagline:
-        "A secure, real-time multilingual translation prototype that enabled mission-speed intelligence in air-gapped environments.",
+        "An offline translation prototype demonstrated in three weeks for a defense agency.",
       image: "/images/work/defense/real-time-ai-translation.jpg",
       externalUrl: "https://www.wwt.com/case-study/real-time-ai-translation-expands-tactical-intelligence-for-defense-agency",
       sections: [
         {
           heading: "",
           body: [
-            "A defense agency needed to translate large volumes of open-source intelligence from multiple languages into actionable reports. Manual processes were slow and risked losing critical time. Existing cloud solutions could not meet the security constraints, and most platforms lacked the regional dialect nuance required for trusted output.",
-            "I led the design of a prototype built within a secure AI proving ground, combining speech recognition, document translation, and automated information retrieval in an air-gapped environment. The team refined regional language models, optimized GPU inference, and demonstrated real-time translation—all in three weeks.",
-            "The result: a working prototype that reduced manual translation time from hours to minutes, preserved cultural nuance, and operated without internet connectivity, giving the agency a viable path to scale mission-ready intelligence workflows.",
+            "A defense agency needed to translate large volumes of open-source intelligence, but cloud services could not meet its security constraints. I led the design of an offline prototype combining speech recognition, document translation, and automated information retrieval.",
+            "The team demonstrated real-time translation in three weeks. The working prototype reduced manual translation from hours to minutes and operated without internet connectivity.",
+          ],
+        },
+        {
+          heading: "Working within the security and language constraints",
+          body: [
+            "The prototype ran in an air-gapped environment inside a secure AI proving ground. The team refined regional language models to preserve dialect and cultural nuance, and optimized GPU inference for real-time output. Those constraints shaped both the architecture and the translation workflow.",
           ],
         },
       ],
@@ -281,9 +292,14 @@ export const workPage = {
         {
           heading: "",
           body: [
-            "WWF Together is an interactive iPad experience designed to help people connect with endangered animals through tactile, hardware-driven interactions. When I joined, the project was drifting: quality concerns, unclear ownership, and slipping deadlines were putting the launch at risk.",
-            "I stepped in to stabilize the technical direction, reset expectations with the external development team, and set a workable cadence with the creative lead.",
-            "I partnered closely with design to concept bespoke interactions for each animal, using the iPad's capabilities to turn simple facts into moments that felt personal. With a lean, cross-disciplinary team, we shipped a focused, intimate experience that earned an Apple Design Award. It remains one of the clearest expressions of how I like to work: design instinct, technical fluency, and steady leadership in equal measure.",
+            "When I joined WWF Together at AKQA, quality concerns, unclear ownership, and slipping deadlines were putting the launch at risk. I reset the technical direction and expectations with the external developers, and established a workable cadence with the creative lead.",
+            "I also partnered with design on bespoke interactions for the animals. Our team shipped an iPad experience that helped people connect with endangered species and earned an Apple Design Award.",
+          ],
+        },
+        {
+          heading: "Using the device to tell the story",
+          body: [
+            "We used the iPad's hardware capabilities to turn conservation facts into tactile interactions. Each animal called for its own idea and behavior. I worked closely with design to develop those interactions while keeping technical delivery on course with the external team.",
           ],
         },
       ],
@@ -300,9 +316,14 @@ export const workPage = {
         {
           heading: "",
           body: [
-            "Verizon needed to test a new retail model: smaller footprints, lighter staffing, and faster service. I led the prototyping of the large wall experiences and self-service kiosks, owning the interaction patterns, flows, and hands-on experimentation required to create something usable in a physical environment.",
-            "We built a full-scale prototype store in the office, rebuilt it in a warehouse, and eventually took it into market. The hardest parts were aligning hardware constraints with digital intent, syncing flows with back-end and point-of-sale systems, and maintaining a fast loop with design and retail operations.",
-            "The pilot showed that key transactions could move to self-service touchpoints, opening the door for new store formats and more flexible retail investment.",
+            "Verizon wanted to test smaller stores with lighter staffing and faster service. I led hands-on prototyping of the large wall experiences and self-service kiosks, including their interaction patterns and transaction flows.",
+            "The team took the concept from a full-scale prototype into market. The pilot showed that key transactions could move to self-service touchpoints, giving Verizon a basis for exploring new store formats.",
+          ],
+        },
+        {
+          heading: "Testing at the scale of a store",
+          body: [
+            "We built the prototype store in the office, rebuilt it in a warehouse, and then tested it in market. I worked through hardware constraints and connections to back-end and point-of-sale systems, keeping a fast feedback loop with design and retail operations. Testing the physical environment was part of designing the digital experience.",
           ],
         },
       ],
@@ -312,16 +333,21 @@ export const workPage = {
       name: "AudiUSA.com",
       company: "AKQA",
       tagline:
-        "A full platform redesign that modernized Audi's U.S. digital presence and improved model-year delivery.",
+        "Front-end leadership for a platform redesign that made model-year updates easier to deliver.",
       image: "/images/work/audi/audiusa.webp",
       videoUrl: "https://player.vimeo.com/video/350079404?title=0&byline=0&portrait=0",
       sections: [
         {
           heading: "",
           body: [
-            "When AKQA became Audi's digital partner in the United States, the platform was dated, slow, and hard to evolve. Model-year updates were painful, the content system struggled with complex vehicle data, and the front-end layer could not support the experience Audi wanted to present.",
-            "I led the front-end team across architecture, workflows, and design prototyping to create a more sustainable base for the redesign. My work focused on unblocking creative exploration, defining reusable components, and setting up a predictable development process that aligned distributed teams in San Francisco, Washington, DC, and within Audi.",
-            "The result was a more stable, more flexible platform and a faster model-year cadence, which strengthened AKQA's long-term partnership with Audi and gave the client greater confidence in future digital work.",
+            "Audi's U.S. website was slow and difficult to update. The content system struggled with complex vehicle data, and the front end limited the experience the brand wanted. I led AKQA's front-end team across architecture, workflows, and design prototyping for the redesign.",
+            "We delivered a more stable, flexible platform and a faster model-year update process. My focus was a reusable component base and a development process that worked across the client and agency teams.",
+          ],
+        },
+        {
+          heading: "Making the redesign easier to maintain",
+          body: [
+            "I used design prototypes to explore the experience while defining reusable components for implementation. The delivery process had to connect teams in San Francisco, Washington, DC, and within Audi, so architecture and workflow decisions were part of the same effort.",
           ],
         },
       ],
@@ -331,16 +357,15 @@ export const workPage = {
       name: "AARP Now",
       company: "AKQA",
       tagline:
-        "A mobile product vision that clarified purpose, sharpened member value, and set the direction for AARP's next-generation app.",
+        "A mobile product vision organized around the value of AARP membership.",
       image: "/images/work/aarp/aarp-now.webp",
       videoUrl: "https://www.youtube.com/embed/2KvnUApNEcs",
       sections: [
         {
           heading: "",
           body: [
-            "AARP knew their mobile experience was falling behind. Members struggled to navigate core features, and the value of membership wasn't coming through. They asked for a reimagined mobile product that could drive stronger engagement and communicate clearer purpose.",
-            "I joined the team to help refine the concept and build a vision that could rise above internal constraints. The initial pitch raised a wave of questions from AARP's leadership, signaling that the product needed stronger positioning and a clearer reason to exist. I worked closely with the team to reexamine user needs, sharpen the narrative around member value, and evolve the concept into something more focused and intentional.",
-            "We spent the following weeks in steady contact with client stakeholders, iterating on flow, feature priority, and the core proposition. The result was a product vision that gave the client renewed confidence and energy, providing a clear guide for the MVP now in production. It showed AARP a version of the app that matched the expectations of modern members and clarified why the mobile experience mattered.",
+            "AARP members struggled to navigate core mobile features and see the value of membership. I joined AKQA's team to refine the product concept, working on user needs, the member-value narrative, and the proposition behind the app.",
+            "After the initial pitch raised questions from AARP's leadership, we spent the following weeks revising the vision with client stakeholders. We reexamined what the app should do for members and produced a more focused set of flows and feature priorities to guide the MVP.",
           ],
         },
       ],
@@ -357,10 +382,15 @@ export const workPage = {
         {
           heading: "",
           body: [
-            "Ubisoft wanted a campaign that could extend the themes of Watch_Dogs into the real world and reinforce the idea that personal data is more revealing than most people realize. The original brief called for multiple digital tent-pole moments connected to PAX, the trailer reveal, and other beats in the launch calendar.",
-            "I joined the concept team to develop ideas that supported those moments and tied directly to the game's surveillance narrative. Early sessions focused on mapping user journeys and exploring how to connect marketing goals with the underlying lore. As budgets tightened, the work narrowed to a single execution that became Digital Shadow.",
-            "This was during a window when Facebook's open graph still exposed meaningful connections and behavioral signals. We used this to build a narrative experience that felt like a personal audit. Instead of 'hacking' users, we reframed publicly available data into a story: who interacts with your posts, who you ignore, which relationships look unbalanced, and how those patterns could be exploited through simple social engineering. The impact came from showing people how exposed they already were.",
-            "My work centered on shaping the narrative structure, refining how we interpreted data, and building quick prototypes that helped the client understand the tone, flow, and boundaries of the experience. Digital Shadow became the lead social campaign for the Watch_Dogs launch and a clear expression of the game's core themes.",
+            "Ubisoft wanted to bring the surveillance themes of Watch_Dogs into the real world. I joined AKQA's concept team, shaping the narrative, refining how we interpreted data, and building prototypes that let the client judge the tone, flow, and boundaries of the experience.",
+            "As the budget narrowed, the work moved from several launch moments to one execution: Digital Shadow. It became the lead social campaign for the Watch_Dogs launch, using people's Facebook data to make personal exposure tangible.",
+          ],
+        },
+        {
+          heading: "Turning available data into a personal story",
+          body: [
+            "At the time, Facebook's Open Graph exposed connections and behavioral signals that could support the experience. We used those signals to describe who interacted with your posts, which relationships looked unbalanced, and how those patterns could be used in social engineering.",
+            "The prototypes helped us connect that personal audit to the game's narrative and the campaign's user journey. The experience drew on data available through the platform at the time; it did not depend on hacking users.",
           ],
         },
       ],
@@ -383,8 +413,8 @@ export const timelinePage = {
       role: "Director of Creative Technology",
       location: "St Louis, Missouri · Remote",
       description: [
-        "I lead a small, sharp team focused on making emerging technology—especially AI—practical inside a $20B enterprise. We prototype fast, frame clearly, and challenge slow-moving models. The work lives between strategy and execution: building tools, shaping narratives, and influencing how the business moves.",
-        "I introduced new offerings like Project AIR (an AI accelerator) and Ignition Zero (a framework for AI-assisted product delivery). Both shift the way WWT sells and delivers work—less bespoke, more repeatable, and better aligned with client urgency.",
+        "I lead a team focused on applying emerging technology, especially AI, to enterprise work. We build prototypes and tools, develop technical proposals, and help teams evaluate possible approaches.",
+        "I introduced Project AIR, a program for custom AI solutions, and Ignition Zero, a framework for AI-assisted product exploration.",
       ],
       highlights: [
         "Applied AI (LLMs, coding agents, architecture patterns)",
@@ -499,9 +529,9 @@ export const timelinePage = {
 // ---------- FOOTER ----------
 
 export const footer = {
-  heading: "Get in touch",
+  heading: "Let's talk about the work",
+  invitation: "Tell me what you're trying to make, where you're stuck, and what kind of help would be useful. If you have a timeline in mind, include that too.",
   email: siteMeta.email,
   linkedinLabel: "LinkedIn →",
-  availability: "Currently accepting select engagements for 2026.",
-  tagline: "Cullum & Co is my practice. I'm Scott Cullum, a creative technologist working across design, engineering, and product.",
+  tagline: "Scott Cullum · Creative technology, design, and engineering.",
 };
