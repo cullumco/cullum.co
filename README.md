@@ -1,6 +1,8 @@
-# Scott Cullum - Portfolio Site
+# Cullum & Co
 
-A modern, performant portfolio website built with Next.js 14, showcasing professional services in creative technology, design, engineering, and AI-native product development.
+Scott Cullum's practice website, branded Cullum & Co and built with Next.js 14. The site keeps Scott's first-person voice, experience, and judgment central, with trusted collaborators and AI agents joining when the work calls for them. Case studies include his Cullum & Co projects and work at their credited organizations.
+
+Canonical site: https://cullumandco.com. Current contact: scott@cullumandco.com. Page metadata, structured data, sitemap, and robots use the URL in `siteMeta`; the footer uses its email address.
 
 ## 🚀 Quick Start
 
@@ -26,7 +28,7 @@ Open [http://localhost:3000](http://localhost:3000) to view the site.
 ## 🏗️ Project Structure
 
 ```
-scullum.com/
+cullum.co/
 ├── app/
 │   ├── components/       # React components
 │   ├── about/            # About page
@@ -110,4 +112,10 @@ Copy `.env.local.example` to `.env.local` and add your environment variables.
 
 ## 📄 License
 
-All rights reserved © 2025 Scott Cullum
+All rights reserved © 2026 Cullum & Co
+
+## Brand assets
+
+`public/images/cullum-and-co-wordmark.png` is the original, unmodified transparent wordmark supplied for the Studio One deck (2018 × 779). Keep its aspect ratio and letterforms. The `Wordmark` component uses its exact alpha as a CSS mask: white on the orange hero, and the site's `orange-600` on light navigation and footer backgrounds. The original scroll handoff reveals the header mark after 100px; opening the mobile menu also reveals it. Forced-color mode uses the system text color.
+
+Run `node scripts/generate-brand-assets.mjs` to regenerate the orange logo metadata asset, social sharing card, and reversed PNG icons from that same alpha mask using Next.js ImageResponse. The generator resolves the site's actual Tailwind orange token. The headshot and historical project images remain in their original contexts.

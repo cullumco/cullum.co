@@ -1,4 +1,5 @@
-import { workPage } from '@/data/content';
+import { workPage, siteMeta } from '@/data/content';
+import { socialImage } from '@/data/brand';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -22,40 +23,32 @@ export async function generateMetadata({ params }: PageProps) {
 
   if (!project) {
     return {
-      title: 'Project Not Found',
+      title: 'Project Not Found - Cullum & Co',
     };
   }
 
-  const url = `https://cullumandco.com/work/${project.slug}`;
-  const imageUrl = project.image || '/images/scott-cullum.jpg';
+  const url = `${siteMeta.url}/work/${project.slug}`;
 
   return {
-    title: `${project.name} - Scott Cullum`,
+    title: `${project.name} - Cullum & Co`,
     description: project.tagline,
     alternates: {
       canonical: url,
     },
     openGraph: {
-      title: `${project.name} - Scott Cullum`,
+      title: `${project.name} - Cullum & Co`,
       description: project.tagline,
       url: url,
-      siteName: 'Scott Cullum',
+      siteName: 'Cullum & Co',
       locale: 'en_US',
       type: 'article',
-      images: [
-        {
-          url: imageUrl,
-          width: 1200,
-          height: 630,
-          alt: project.name,
-        },
-      ],
+      images: [socialImage],
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${project.name} - Scott Cullum`,
+      title: `${project.name} - Cullum & Co`,
       description: project.tagline,
-      images: [imageUrl],
+      images: [socialImage],
     },
   };
 }
@@ -67,6 +60,8 @@ export default function ProjectPage({ params }: PageProps) {
     notFound();
   }
 
+  const [introduction, ...sections] = project.sections;
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'CreativeWork',
@@ -75,13 +70,14 @@ export default function ProjectPage({ params }: PageProps) {
     author: {
       '@type': 'Person',
       name: 'Scott Cullum',
-      url: 'https://cullumandco.com',
+      '@id': `${siteMeta.url}/about#scott-cullum`,
+      url: `${siteMeta.url}/about`,
     },
     publisher: {
       '@type': 'Organization',
       name: project.company,
     },
-    url: `https://cullumandco.com/work/${project.slug}`,
+    url: `${siteMeta.url}/work/${project.slug}`,
     image: project.image,
   };
 
@@ -92,7 +88,7 @@ export default function ProjectPage({ params }: PageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Navigation />
-      <main className="pt-32 pb-24 px-8">
+      <main id="main-content" className="pt-32 pb-24 px-8">
         <div className="max-w-4xl mx-auto">
           {/* Back link */}
           <Link
@@ -105,7 +101,7 @@ export default function ProjectPage({ params }: PageProps) {
           {/* Project header */}
           <div className="mb-16">
             <p className="text-sm uppercase tracking-[0.2em] text-neutral-500 mb-6 font-semibold">
-              {project.company}
+              Scott Cullum · {project.company}
             </p>
             <h1 className="text-5xl md:text-6xl font-semibold leading-tight tracking-tight mb-6 text-orange-600">
               {project.name}
@@ -127,6 +123,15 @@ export default function ProjectPage({ params }: PageProps) {
               </div>
             )}
           </div>
+
+          {/* Establish the problem, contribution, and outcome before the media. */}
+          {introduction && (
+            <div className="space-y-6 text-lg text-neutral-700 leading-relaxed max-w-prose mb-16">
+              {introduction.body.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </div>
+          )}
 
           {/* Video player */}
           {project.videoUrl && (
@@ -157,24 +162,19 @@ export default function ProjectPage({ params }: PageProps) {
 
           {/* Project sections */}
           <div className="space-y-16">
-            {project.sections.map((section, index) => (
+            {sections.map((section, index) => (
               <div key={index}>
                 {section.heading && (
                   <h2 className="text-3xl font-semibold tracking-tight mb-4">
                     {section.heading}
                   </h2>
                 )}
-                {'subheading' in section && section.subheading && (
-                  <p className="text-xl text-neutral-700 mb-6 italic leading-relaxed">
-                    {section.subheading}
-                  </p>
-                )}
                 <div className="space-y-6 text-lg text-neutral-700 leading-relaxed max-w-prose">
                   {section.body.map((paragraph, pIndex) => (
                     <p key={pIndex}>{paragraph}</p>
                   ))}
                 </div>
-                {index < project.sections.length - 1 && (
+                {index < sections.length - 1 && (
                   <div className="h-px bg-neutral-200 mt-16"></div>
                 )}
               </div>

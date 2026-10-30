@@ -1,17 +1,22 @@
 import { footer, siteMeta } from '@/data/content';
+import Link from 'next/link';
+import { Wordmark } from './Wordmark';
 
 export function Footer() {
   return (
     <footer id="contact" className="px-8 py-32 bg-neutral-50 border-t border-neutral-200">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16">
-          <h2 className="text-5xl md:text-6xl font-semibold tracking-tight mb-12">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight mb-6">
             {footer.heading}
           </h2>
+          <p className="text-lg text-neutral-700 leading-relaxed max-w-prose mb-10">
+            {footer.invitation}
+          </p>
           <div className="space-y-4">
             <a
               href={`mailto:${footer.email}`}
-              className="text-3xl md:text-4xl text-orange-600 hover:text-orange-700 transition-colors inline-block"
+              className="text-2xl sm:text-3xl md:text-4xl text-orange-600 hover:text-orange-700 transition-colors inline-block break-all"
             >
               {footer.email}
             </a>
@@ -26,14 +31,12 @@ export function Footer() {
               </a>
             </div>
           </div>
-          {footer.availability && (
-            <p className="text-neutral-600 text-base mt-8">
-              {footer.availability}
-            </p>
-          )}
         </div>
 
         <div className="pt-16 border-t border-neutral-200">
+          <Link href="/" aria-label={`${siteMeta.name} home`} className="inline-block mb-6">
+            <Wordmark className="w-64 max-w-full" />
+          </Link>
           <p className="text-neutral-500 text-sm tracking-wide leading-relaxed">
             {footer.tagline}
           </p>

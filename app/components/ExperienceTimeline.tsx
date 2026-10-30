@@ -81,6 +81,14 @@ export function ExperienceTimeline() {
 
   return (
     <div className="w-full bg-white">
+      <div className="max-w-7xl mx-auto pt-8">
+        <h2 className="text-2xl font-semibold tracking-tight mb-4">
+          {timelinePage.hero.title}
+        </h2>
+        <p className="text-lg text-neutral-700 leading-relaxed max-w-prose">
+          {timelinePage.hero.subtitle}
+        </p>
+      </div>
       <Timeline data={data} />
 
       {/* Education Section */}

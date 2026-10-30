@@ -1,36 +1,30 @@
-import { aboutPage } from '@/data/content';
+import { aboutPage, siteMeta } from '@/data/content';
+import { socialImage } from '@/data/brand';
 import { Navigation } from '@/app/components/Navigation';
 import { Footer } from '@/app/components/Footer';
 import { ExperienceTimeline } from '@/app/components/ExperienceTimeline';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'About - Scott Cullum',
-  description: 'Learn about Scott Cullum, a creative technologist with 20+ years of experience bridging design, engineering, and strategy.',
+  title: 'About - Cullum & Co',
+  description: "I'm Scott Cullum. My approach grew from web design and development into creative technology and engineering leadership at Under Armour, AKQA, Red Antler, and WWT.",
   alternates: {
-    canonical: 'https://cullumandco.com/about',
+    canonical: `${siteMeta.url}/about`,
   },
   openGraph: {
-    title: 'About - Scott Cullum',
-    description: 'Learn about Scott Cullum, a creative technologist with 20+ years of experience bridging design, engineering, and strategy.',
-    url: 'https://cullumandco.com/about',
-    siteName: 'Scott Cullum',
+    title: 'About - Cullum & Co',
+    description: "I'm Scott Cullum. My approach grew from web design and development into creative technology and engineering leadership at Under Armour, AKQA, Red Antler, and WWT.",
+    url: `${siteMeta.url}/about`,
+    siteName: 'Cullum & Co',
     locale: 'en_US',
-    type: 'profile',
-    images: [
-      {
-        url: '/images/scott-cullum.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Scott Cullum',
-      },
-    ],
+    type: 'website',
+    images: [socialImage],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About - Scott Cullum',
-    description: 'Learn about Scott Cullum, a creative technologist with 20+ years of experience bridging design, engineering, and strategy.',
-    images: ['/images/scott-cullum.jpg'],
+    title: 'About - Cullum & Co',
+    description: "I'm Scott Cullum. My approach grew from web design and development into creative technology and engineering leadership at Under Armour, AKQA, Red Antler, and WWT.",
+    images: [socialImage],
   },
 };
 
@@ -38,7 +32,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white text-neutral-900">
       <Navigation />
-      <main className="pt-32 pb-24 px-8">
+      <main id="main-content" className="pt-32 pb-24 px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-12 gap-16">
             {/* Sidebar with label and photo */}
@@ -65,7 +59,7 @@ export default function AboutPage() {
             {/* Content */}
             <div className="md:col-span-9 space-y-12">
               {aboutPage.sections.map((section, sectionIndex) => (
-                <div key={sectionIndex}>
+                <div key={sectionIndex} id={section.heading === 'Scott Cullum' ? 'scott-cullum' : undefined}>
                   {section.heading && (
                     <>
                       <h2 className="text-2xl font-semibold tracking-tight mb-6">

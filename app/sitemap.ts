@@ -1,9 +1,9 @@
 import { MetadataRoute } from 'next';
-import { workPage } from '@/data/content';
+import { workPage, siteMeta } from '@/data/content';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const workEntries = workPage.projects.map((project) => ({
-    url: `https://cullumandco.com/work/${project.slug}`,
+    url: `${siteMeta.url}/work/${project.slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.8,
@@ -11,25 +11,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
-      url: 'https://cullumandco.com',
+      url: siteMeta.url,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 1,
     },
     {
-      url: 'https://cullumandco.com/about',
+      url: `${siteMeta.url}/about`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.9,
     },
     {
-      url: 'https://cullumandco.com/services',
+      url: `${siteMeta.url}/services`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.9,
     },
     {
-      url: 'https://cullumandco.com/work',
+      url: `${siteMeta.url}/work`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.95,

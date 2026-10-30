@@ -15,3 +15,10 @@ html {
   font-size: 15px;
 }
 
+@media (forced-colors: active) {
+  .wordmark {
+    forced-color-adjust: none;
+    background-color: CanvasText;
+  }
+}
+

@@ -1,22 +1,28 @@
-# Scott Cullum
+# Cullum & Co — Scott Cullum
 
-> Scott Cullum is a creative technologist who helps teams cut through ambiguity and move the work forward. His work sits across design, engineering, and product, bridging conversations that often slow progress.
+> I'm Scott Cullum, a creative technologist and hands-on technical leader. I help teams turn early ideas into working products.
 
-Scott works in an AI-native way — faster exploration, fewer wasted cycles. Most clients bring him in part-time for senior direction and hands-on support; when a project needs more depth, he works with a small network of trusted collaborators.
+I shape the experience, build prototypes to test difficult ideas, and guide the technical decisions behind delivery.
 
-## How he helps
+## How I help
 
-- Advisory support for product and technology leaders
-- AI-native prototyping and technical exploration
-- Capability building for teams adopting modern workflows
+- Direction and decisions: product priorities, feasibility, technical scoping, and next steps
+- Prototyping and technical leadership: prototypes, front-end architecture, design systems, and hands-on collaboration
+- Helping teams work better: workflows, design/engineering collaboration, and coaching on AI tools and agents
+
+## How engagements work
+
+Cullum & Co is my practice. I usually work part-time as a fractional partner, combining advisory support with hands-on work. I use AI tools and agents where they help me explore and build, and bring in trusted collaborators when an engagement needs more depth.
 
 ## Pages
 
-- [About](https://cullumandco.com/about): background and approach
+- [About me](https://cullumandco.com/about): my practice, biography, and career experience
 - [Services](https://cullumandco.com/services): engagement models and offerings
-- [Work](https://cullumandco.com/work): selected projects and case studies
+- [Work](https://cullumandco.com/work): my Cullum & Co projects and work at World Wide Technology and AKQA, with the original organization credits and my account of each contribution
 
 ## Contact
 
-- Email: scott@cullum.co
-- [LinkedIn](https://www.linkedin.com/in/scullum/)
+Tell me what you're trying to make, where you're stuck, and what kind of help would be useful. Include any timeline you have in mind.
+
+- Email: scott@cullumandco.com
+- [Scott on LinkedIn](https://www.linkedin.com/in/scullum/)

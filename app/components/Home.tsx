@@ -1,21 +1,23 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { homePage } from '@/data/content';
 import { motion } from 'framer-motion';
+import { Wordmark } from './Wordmark';
 
 export function Home() {
-  const [hideHeroName, setHideHeroName] = useState(false);
+  const [hideHeroWordmark, setHideHeroWordmark] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 100) {
-        setHideHeroName(true);
+        setHideHeroWordmark(true);
         window.removeEventListener('scroll', handleScroll);
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -25,13 +27,12 @@ export function Home() {
         <div className="max-w-5xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: hideHeroName ? 0 : 1, y: 0 }}
+            animate={{ opacity: hideHeroWordmark ? 0 : 1, y: 0 }}
             transition={{ duration: 0.5 }}
             className="py-8 mb-4"
+            aria-hidden={hideHeroWordmark}
           >
-            <p className="text-2xl md:text-3xl font-semibold tracking-tight">
-              {homePage.hero.title}
-            </p>
+            <Wordmark tone="white" />
           </motion.div>
 
           <motion.h1

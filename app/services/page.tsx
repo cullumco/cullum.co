@@ -1,34 +1,28 @@
-import { servicesPage } from '@/data/content';
+import { servicesPage, siteMeta } from '@/data/content';
+import { socialImage } from '@/data/brand';
 import { Navigation } from '@/app/components/Navigation';
 import { Footer } from '@/app/components/Footer';
 
 export const metadata = {
-  title: 'Services - Scott Cullum',
-  description: 'Fractional advisory, AI-native prototyping, capability support, and technical direction for teams that need senior guidance.',
+  title: 'Services - Cullum & Co',
+  description: 'Creative and technical direction, hands-on prototyping, and support for teams improving how they work. Work with Scott Cullum through Cullum & Co.',
   alternates: {
-    canonical: 'https://cullumandco.com/services',
+    canonical: `${siteMeta.url}/services`,
   },
   openGraph: {
-    title: 'Services - Scott Cullum',
-    description: 'Fractional advisory, AI-native prototyping, capability support, and technical direction for teams that need senior guidance.',
-    url: 'https://cullumandco.com/services',
-    siteName: 'Scott Cullum',
+    title: 'Services - Cullum & Co',
+    description: 'Creative and technical direction, hands-on prototyping, and support for teams improving how they work. Work with Scott Cullum through Cullum & Co.',
+    url: `${siteMeta.url}/services`,
+    siteName: 'Cullum & Co',
     locale: 'en_US',
     type: 'website',
-    images: [
-      {
-        url: '/images/scott-cullum.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Scott Cullum - Services',
-      },
-    ],
+    images: [socialImage],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Services - Scott Cullum',
-    description: 'Fractional advisory, AI-native prototyping, capability support, and technical direction for teams that need senior guidance.',
-    images: ['/images/scott-cullum.jpg'],
+    title: 'Services - Cullum & Co',
+    description: 'Creative and technical direction, hands-on prototyping, and support for teams improving how they work. Work with Scott Cullum through Cullum & Co.',
+    images: [socialImage],
   },
 };
 
@@ -36,7 +30,7 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-white text-neutral-900">
       <Navigation />
-      <main className="pt-32 pb-24 px-8">
+      <main id="main-content" className="pt-32 pb-24 px-8">
         <div className="max-w-7xl mx-auto">
           <div className="mb-24">
             <h1 className="text-sm uppercase tracking-[0.2em] text-orange-600 mb-6 font-semibold">
@@ -53,7 +47,8 @@ export default function ServicesPage() {
             {servicesPage.services.map((service) => (
               <div
                 key={service.id}
-                className="bg-white border border-neutral-200 p-12 hover:border-neutral-900 transition-colors"
+                id={service.id}
+                className="bg-white border border-neutral-200 p-6 md:p-12 hover:border-neutral-900 transition-colors scroll-mt-32"
               >
                 <div className="grid md:grid-cols-12 gap-8">
                   <div className="md:col-span-5">
@@ -105,6 +100,17 @@ export default function ServicesPage() {
               </div>
             ))}
           </div>
+
+          <section className="mt-16 pt-16 border-t border-neutral-200 max-w-prose" aria-labelledby="engagement-heading">
+            <h2 id="engagement-heading" className="text-3xl font-semibold tracking-tight mb-6">
+              {servicesPage.engagement.heading}
+            </h2>
+            <div className="space-y-6 text-lg text-neutral-700 leading-relaxed">
+              {servicesPage.engagement.body.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </div>
+          </section>
 
           {/* CTA to Work */}
           <div className="pt-16 mt-16 border-t border-neutral-200">

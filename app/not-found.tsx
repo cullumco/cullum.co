@@ -3,7 +3,7 @@ import { Navigation } from './components/Navigation';
 import { Footer } from './components/Footer';
 
 export const metadata = {
-  title: '404 - Page Not Found',
+  title: 'Page Not Found - Cullum & Co',
   description: 'The page you are looking for does not exist.',
 };
 
@@ -11,7 +11,7 @@ export default function NotFound() {
   return (
     <div className="min-h-screen bg-white text-neutral-900">
       <Navigation />
-      <main className="pt-32 pb-24 px-8">
+      <main id="main-content" className="pt-32 pb-24 px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-9xl font-semibold tracking-tight text-orange-600 mb-8">
             404

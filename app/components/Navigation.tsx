@@ -5,12 +5,13 @@ import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
 import { nav, siteMeta } from '@/data/content';
+import { Wordmark } from './Wordmark';
 
 export function Navigation() {
   const pathname = usePathname();
   const isHomePage = pathname === '/';
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [showName, setShowName] = useState(!isHomePage);
+  const [showWordmark, setShowWordmark] = useState(!isHomePage);
   const [activeSection, setActiveSection] = useState<string>('');
 
   useEffect(() => {
@@ -42,18 +43,19 @@ export function Navigation() {
 
   useEffect(() => {
     if (!isHomePage) {
-      setShowName(true);
+      setShowWordmark(true);
       return;
     }
 
     const handleScroll = () => {
       if (window.scrollY > 100) {
-        setShowName(true);
+        setShowWordmark(true);
         window.removeEventListener('scroll', handleScroll);
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, [isHomePage]);
 
@@ -75,16 +77,18 @@ export function Navigation() {
       >
         Skip to main content
       </a>
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-neutral-50 border-b border-neutral-200">
-        <div className="px-8 py-6">
+      <nav aria-label="Main navigation" className="fixed top-0 left-0 right-0 z-50 bg-neutral-50 border-b border-neutral-200">
+        <div className="px-8 py-3">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <Link
             href="/"
-            className={`text-2xl md:text-3xl font-semibold tracking-tight text-orange-600 hover:text-orange-700 transition-all duration-300 ${
-              showName ? 'opacity-100' : 'opacity-0'
-            }`}
+            aria-label={`${siteMeta.name} home`}
+            aria-hidden={!showWordmark && !mobileMenuOpen}
+            tabIndex={showWordmark || mobileMenuOpen ? undefined : -1}
+            className={`shrink-0 rounded-sm transition-opacity duration-300 motion-reduce:transition-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-orange-600 ${showWordmark || mobileMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+            onClick={handleLinkClick}
           >
-            {siteMeta.name}
+            <Wordmark />
           </Link>
 
           {/* Desktop Navigation */}
@@ -114,7 +118,9 @@ export function Navigation() {
           <button
             className="md:hidden p-2 hover:text-orange-600 transition-colors"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle menu"
+            aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={mobileMenuOpen}
+            aria-controls="mobile-navigation"
           >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -123,7 +129,7 @@ export function Navigation() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-t border-neutral-200 bg-neutral-50">
+        <div id="mobile-navigation" className="md:hidden border-t border-neutral-200 bg-neutral-50">
           <div className="px-8 py-6">
             <div className="max-w-7xl mx-auto flex flex-col gap-4">
               {nav.slice(1).map((link) => (

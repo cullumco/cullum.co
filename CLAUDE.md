@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Next.js-based personal consultancy website (cullumandco.com) built with TypeScript, React, and Tailwind CSS. The site is a single-page application showcasing professional services in design, engineering, and AI-native product development.
+This is Scott Cullum's practice website, branded Cullum & Co (cullumandco.com), built with Next.js, TypeScript, React, and Tailwind CSS. Keep Scott visibly central and use his first-person voice for his experience, judgment, services, and work. Cullum & Co is his practice, extended by trusted collaborators and AI agents when needed. Preserve his biography, personal career history, and credited contributions to historical case studies.
 
 ## Technology Stack
 
@@ -73,10 +73,10 @@ All site content is centralized in a single file for easy updates:
 - **data/content.ts**: Single source of truth containing:
   - `siteMeta`: Site-wide metadata (name, email, social links)
   - `nav`: Navigation links
-  - `homePage`: Hero content and "How I help" items
+  - `homePage`: Hero content, "How I help" links, and curated featured-project slugs and summaries
   - `aboutPage`: Narrative sections about background and approach
   - `servicesPage`: Detailed service offerings with structured content
-  - `workPage`: Project previews and full case study content
+  - `workPage`: Project previews and full case study content; the first section introduces the problem, Scott's contribution, and supported result before the media, with the remaining sections providing detail
   - `footer`: Footer content
 
 This centralized approach allows content updates without touching component code. Components import only what they need from this file.
@@ -103,11 +103,13 @@ Both development and production servers are explicitly configured to run on port
 
 ## SEO & Metadata
 
-- Structured data (JSON-LD) for Person schema in app/layout.tsx
+- Structured data (JSON-LD) for the Cullum & Co practice and Scott Cullum as a separate Person in app/layout.tsx
 - Open Graph and Twitter Card metadata configured
 - Dynamic robots.txt via app/robots.ts
 - Dynamic sitemap.xml via app/sitemap.ts
-- metadataBase set to https://cullumandco.com
+- metadataBase set from siteMeta.url (https://cullumandco.com)
+- `data/brand.ts` supplies the same badge sharing image to every page, including case studies
+- Run `node scripts/generate-brand-assets.mjs` after changing brand artwork. It preserves the supplied originals in `public/images/brand`, fits the badge into `public/images/cullum-and-co-badge-share.png` (also retained at `/og.png`), and creates curled-C browser/Apple icons plus a multi-size favicon. Header/footer wordmark styling remains separate.
 
 ## Routing Structure
 
