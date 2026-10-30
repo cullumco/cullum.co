@@ -1,16 +1,18 @@
 # Cullum & Co — Scott Cullum
 
-> I'm Scott Cullum. Cullum & Co is my practice. I work across design, engineering, and product, combining creative instincts and technical judgment with hands-on building.
+> I'm Scott Cullum, a creative technologist and hands-on technical leader. I help teams turn early ideas into working products.
 
-I help teams decide what's worth making, test ideas early, and turn them into working products. Most clients bring me in part-time for senior direction and hands-on support. I stay close to the work, bringing in trusted collaborators and using AI agents when the engagement calls for them.
+Cullum & Co is my practice. I shape the experience, build prototypes to test difficult ideas, and guide the technical decisions behind delivery.
 
 ## How I help
 
-- Fractional advisory for product and technology leaders
-- AI-native exploration and prototyping
-- Capability support for teams adopting modern workflows
-- Technical direction across front-end architecture and experience quality
-- Flexible team support through trusted collaborators
+- Direction and decisions: product priorities, feasibility, technical scoping, and next steps
+- Prototyping and technical leadership: prototypes, front-end architecture, design systems, and hands-on collaboration
+- Helping teams work better: workflows, design/engineering collaboration, and coaching on AI tools and agents
+
+## How engagements work
+
+I usually work part-time as a fractional partner, combining advisory support with hands-on work. I use AI tools and agents where they help me explore and build, and bring in trusted collaborators when an engagement needs more depth.
 
 ## Pages
 

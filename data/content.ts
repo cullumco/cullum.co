@@ -2,7 +2,7 @@
 
 export const siteMeta = {
   name: "Cullum & Co",
-  tagline: "I'm Scott Cullum. Cullum & Co is my practice across design, engineering, and product, with trusted collaborators and AI agents when the work calls for them.",
+  tagline: "I'm Scott Cullum, a creative technologist and hands-on technical leader. I help teams shape ideas, build prototypes, and guide products through delivery.",
   url: "https://cullumandco.com",
   email: "scott@cullumandco.com",
   social: {
@@ -22,11 +22,10 @@ export const nav = [
 export const homePage = {
   hero: {
     title: "Cullum & Co",
-    subtitle: "I'm Scott Cullum. I help teams cut through ambiguity and move the work forward.",
+    subtitle: "I'm Scott Cullum. I help teams turn early ideas into working products.",
     body: [
-      "Cullum & Co is my practice. I work across design, engineering, and product, combining creative instincts and technical judgment with hands-on building.",
-      "I help teams decide what's worth making, test ideas early, and turn them into working products. I stay close to the work, from shaping the direction to building and refining the details.",
-      "Most clients bring me in part-time for senior direction and hands-on support. I bring in trusted collaborators and use AI agents when the work calls for them.",
+      "I'm a creative technologist and hands-on technical leader. I shape the experience, build prototypes to test difficult ideas, and guide the technical decisions behind delivery.",
+      "Cullum & Co is my practice. I work directly with your team, bringing in trusted collaborators and AI agents when the work calls for them.",
     ],
     cta: {
       label: "View work",
@@ -36,9 +35,31 @@ export const homePage = {
   howIHelp: {
     heading: "How I help",
     items: [
-      "Advisory support for product and technology leaders",
-      "AI-native prototyping and technical exploration",
-      "Capability building for teams adopting modern workflows",
+      { label: "Direction and decisions", href: "/services#direction-and-decisions" },
+      { label: "Prototyping and technical leadership", href: "/services#prototyping-and-technical-leadership" },
+      { label: "Helping teams work better", href: "/services#helping-teams-work-better" },
+    ],
+  },
+  featuredWork: {
+    heading: "Selected work",
+    intro: "Work in conservation, retail, and applied AI, alongside a product from my own practice.",
+    projects: [
+      {
+        slug: "wwf-together",
+        description: "I helped shape the interactions and stabilized technical delivery on an Apple Design Award–winning iPad experience.",
+      },
+      {
+        slug: "verizon-express-store",
+        description: "I led hands-on prototyping of self-service kiosks and wall experiences for a new retail model.",
+      },
+      {
+        slug: "real-time-ai-translation",
+        description: "I led the design of an offline translation prototype, demonstrated by the team in three weeks.",
+      },
+      {
+        slug: "kettel",
+        description: "A shared planning workspace for strategy, design, and engineering teams working with AI coding agents.",
+      },
     ],
   },
 };
@@ -78,91 +99,71 @@ export const servicesPage = {
   hero: {
     title: "Services",
     intro: [
-      "I work with organizations that need senior guidance across product, design, and engineering without adding another full-time leader.",
-      "Most clients bring me in part-time to help set direction, make technical decisions, and turn ideas into prototypes their teams can use.",
-      "I use AI-native tools and agents where they help me explore, prototype, and build. When an engagement needs another perspective or specialist skill, I bring in trusted collaborators.",
+      "Bring me in when you need to choose a direction, test a difficult idea, or help your team deliver it.",
     ],
   },
   services: [
     {
-      id: "fractional-advisory",
-      name: "Fractional Advisory",
-      summary: "Ongoing leadership across product, design, and technology.",
+      id: "direction-and-decisions",
+      name: "Direction and decisions",
+      summary: "Work out what to make, why it matters, and what it will take.",
       description: [
-        "Some teams do not need another headcount. They need someone who can cut through ambiguity, bring a clear point of view, and keep work moving.",
+        "When priorities compete or an idea is still taking shape, I help your team choose a direction and make the product and technical decisions behind it.",
       ],
       whatThisIncludes: [
-        "Weekly or biweekly working sessions",
         "Prioritization, direction, and feasibility guidance",
         "Translating loose concepts into concrete next steps",
-        "Input on AI-native workflows and delivery patterns",
+        "Technical scoping and decision support",
+        "Connecting design intent with engineering constraints",
       ],
       goodFor: [
-        "Organizations that want senior perspective without the overhead of a permanent role.",
+        "Teams choosing a direction, weighing trade-offs, or needing an ongoing senior perspective.",
       ],
     },
     {
-      id: "ai-native-exploration",
-      name: "AI-Native Exploration & Prototyping",
-      summary: "Move from idea to clarity faster.",
+      id: "prototyping-and-technical-leadership",
+      name: "Prototyping and technical leadership",
+      summary: "Test the idea in something people can use.",
       description: [
-        "I use AI-native tools and agents to explore possible directions, test assumptions, and build prototypes early enough to inform a decision.",
+        "I build prototypes to explore interactions and test assumptions, then help shape the architecture and delivery approach for the work ahead.",
       ],
       whatThisIncludes: [
         "Prototypes and proofs of concept",
         "Fast-turn exploration across design and engineering",
+        "Front-end architecture and planning",
+        "Component and design system guidance",
         "Hands-on collaboration with your team",
         "Clear, practical recommendations",
       ],
       goodFor: [
-        "Teams evaluating new concepts, preparing for investment, or reducing risk before committing.",
+        "Teams testing a concept before committing, preparing for investment, or needing technical leadership through delivery.",
       ],
     },
     {
-      id: "capability-support",
-      name: "Capability Support",
-      summary: "Better ways of working for modern teams.",
+      id: "helping-teams-work-better",
+      name: "Helping teams work better",
+      summary: "Improve how design and engineering work together.",
       description: [
-        "Many teams know they can move faster, but the bottlenecks are not always obvious. I help identify the friction, simplify workflows, and integrate AI-native tools in ways that make sense.",
+        "I work with your team to find bottlenecks, simplify handoffs, and introduce tools and practices they can use in the work.",
       ],
       whatThisIncludes: [
         "Workflow and process improvements",
         "Stronger collaboration between design and engineering",
-        "Coaching on AI-native tooling",
+        "Coaching on AI tools and agent workflows",
         "Reduction of unnecessary complexity",
       ],
       goodFor: [
-        "Organizations under pressure to deliver faster, collaborate more tightly, or adopt modern workflows.",
+        "Teams that need to improve delivery, collaborate more closely, or put AI tools to practical use.",
       ],
-    },
-    {
-      id: "technical-direction",
-      name: "Technical Direction",
-      summary: "Hands-on technical leadership focused on front-end and experience quality.",
-      description: [
-        "I help teams make sound technical decisions early, support design partners, and set a path that holds up once real users arrive.",
-      ],
-      whatThisIncludes: [
-        "Front-end architecture and planning",
-        "Component and design system guidance",
-        "Technical scoping and decision support",
-        "Bridging conversations between design and engineering",
-      ],
-      goodFor: [
-        "Teams that need steady technical leadership without hiring a full-time lead.",
-      ],
-    },
-    {
-      id: "flexible-team-support",
-      name: "Flexible Team Support",
-      summary: "A trusted network that can scale with the work.",
-      description: [
-        "When an engagement needs more depth, I bring in designers, engineers, and specialists I've worked with before, matching their experience to what the work needs.",
-      ],
-      whatThisIncludes: [],
-      goodFor: [],
     },
   ],
+  engagement: {
+    heading: "How engagements work",
+    body: [
+      "I usually work part-time as a fractional partner, combining advisory support with hands-on work. Weekly or biweekly working sessions give us a regular place to make decisions and review progress.",
+      "I use AI tools and agents where they help me explore, prototype, and build. When an engagement needs more depth, I bring in designers, engineers, and specialists I've worked with before.",
+    ],
+  },
 };
 
 // ---------- WORK ----------
@@ -171,9 +172,7 @@ export const workPage = {
   hero: {
     title: "Work",
     intro: [
-      "I have spent more than two decades working across design, engineering, and product, shaping prototypes, platforms, and experiences for organizations ranging from early-stage teams to global enterprises.",
-      "The work here follows a consistent pattern: complex problems, interdisciplinary teams, and the need to turn ideas into something tangible early.",
-      "My role shifts based on the engagement — creative technologist, product partner, technical lead, senior advisor — but the throughline is the same: make the work clear, reduce friction, and move it forward.",
+      "Selected projects from Cullum & Co and my work at AKQA and World Wide Technology, with my role and contributions in each case study.",
     ],
   },
   projects: [

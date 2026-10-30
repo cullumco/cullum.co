@@ -73,7 +73,7 @@ All site content is centralized in a single file for easy updates:
 - **data/content.ts**: Single source of truth containing:
   - `siteMeta`: Site-wide metadata (name, email, social links)
   - `nav`: Navigation links
-  - `homePage`: Hero content and "How I help" items
+  - `homePage`: Hero content, "How I help" links, and curated featured-project slugs and summaries
   - `aboutPage`: Narrative sections about background and approach
   - `servicesPage`: Detailed service offerings with structured content
   - `workPage`: Project previews and full case study content
