@@ -8,12 +8,12 @@ export const metadata = {
   title: 'Work - Scott Cullum',
   description: 'Portfolio of work spanning design, engineering, and product across organizations from early-stage teams to global enterprises.',
   alternates: {
-    canonical: 'https://scullum.com/work',
+    canonical: 'https://cullumandco.com/work',
   },
   openGraph: {
     title: 'Work - Scott Cullum',
     description: 'Portfolio of work spanning design, engineering, and product across organizations from early-stage teams to global enterprises.',
-    url: 'https://scullum.com/work',
+    url: 'https://cullumandco.com/work',
     siteName: 'Scott Cullum',
     locale: 'en_US',
     type: 'website',

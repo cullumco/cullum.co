@@ -12,9 +12,9 @@ Scott works in an AI-native way — faster exploration, fewer wasted cycles. Mos
 
 ## Pages
 
-- [About](https://scullum.com/about): background and approach
-- [Services](https://scullum.com/services): engagement models and offerings
-- [Work](https://scullum.com/work): selected projects and case studies
+- [About](https://cullumandco.com/about): background and approach
+- [Services](https://cullumandco.com/services): engagement models and offerings
+- [Work](https://cullumandco.com/work): selected projects and case studies
 
 ## Contact
 

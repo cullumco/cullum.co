@@ -6,12 +6,12 @@ export const metadata = {
   title: 'Services - Scott Cullum',
   description: 'Fractional advisory, AI-native prototyping, capability support, and technical direction for teams that need senior guidance.',
   alternates: {
-    canonical: 'https://scullum.com/services',
+    canonical: 'https://cullumandco.com/services',
   },
   openGraph: {
     title: 'Services - Scott Cullum',
     description: 'Fractional advisory, AI-native prototyping, capability support, and technical direction for teams that need senior guidance.',
-    url: 'https://scullum.com/services',
+    url: 'https://cullumandco.com/services',
     siteName: 'Scott Cullum',
     locale: 'en_US',
     type: 'website',

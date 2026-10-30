@@ -8,12 +8,12 @@ export const metadata = {
   title: 'About - Scott Cullum',
   description: 'Learn about Scott Cullum, a creative technologist with 20+ years of experience bridging design, engineering, and strategy.',
   alternates: {
-    canonical: 'https://scullum.com/about',
+    canonical: 'https://cullumandco.com/about',
   },
   openGraph: {
     title: 'About - Scott Cullum',
     description: 'Learn about Scott Cullum, a creative technologist with 20+ years of experience bridging design, engineering, and strategy.',
-    url: 'https://scullum.com/about',
+    url: 'https://cullumandco.com/about',
     siteName: 'Scott Cullum',
     locale: 'en_US',
     type: 'profile',

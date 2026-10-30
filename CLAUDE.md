@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Next.js-based personal consultancy website (scullum.com) built with TypeScript, React, and Tailwind CSS. The site is a single-page application showcasing professional services in design, engineering, and AI-native product development.
+This is a Next.js-based personal consultancy website (cullumandco.com) built with TypeScript, React, and Tailwind CSS. The site is a single-page application showcasing professional services in design, engineering, and AI-native product development.
 
 ## Technology Stack
 
@@ -107,7 +107,7 @@ Both development and production servers are explicitly configured to run on port
 - Open Graph and Twitter Card metadata configured
 - Dynamic robots.txt via app/robots.ts
 - Dynamic sitemap.xml via app/sitemap.ts
-- metadataBase set to https://scullum.com
+- metadataBase set to https://cullumandco.com
 
 ## Routing Structure
 
