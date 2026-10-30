@@ -1,34 +1,28 @@
 import { servicesPage, siteMeta } from '@/data/content';
+import { socialImage } from '@/data/brand';
 import { Navigation } from '@/app/components/Navigation';
 import { Footer } from '@/app/components/Footer';
 
 export const metadata = {
   title: 'Services - Cullum & Co',
-  description: 'I offer fractional advisory, AI-native prototyping, capability support, and technical direction through my practice, Cullum & Co.',
+  description: 'Creative and technical direction, hands-on prototyping, and support for teams improving how they work. Work with Scott Cullum through Cullum & Co.',
   alternates: {
     canonical: `${siteMeta.url}/services`,
   },
   openGraph: {
     title: 'Services - Cullum & Co',
-    description: 'I offer fractional advisory, AI-native prototyping, capability support, and technical direction through my practice, Cullum & Co.',
+    description: 'Creative and technical direction, hands-on prototyping, and support for teams improving how they work. Work with Scott Cullum through Cullum & Co.',
     url: `${siteMeta.url}/services`,
     siteName: 'Cullum & Co',
     locale: 'en_US',
     type: 'website',
-    images: [
-      {
-        url: '/og.png',
-        width: 1200,
-        height: 630,
-        alt: 'Cullum & Co - Scott Cullum, creative technology and fractional advisory',
-      },
-    ],
+    images: [socialImage],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Services - Cullum & Co',
-    description: 'I offer fractional advisory, AI-native prototyping, capability support, and technical direction through my practice, Cullum & Co.',
-    images: [{ url: '/og.png', alt: 'Cullum & Co - Scott Cullum, creative technology and fractional advisory' }],
+    description: 'Creative and technical direction, hands-on prototyping, and support for teams improving how they work. Work with Scott Cullum through Cullum & Co.',
+    images: [socialImage],
   },
 };
 
@@ -53,7 +47,8 @@ export default function ServicesPage() {
             {servicesPage.services.map((service) => (
               <div
                 key={service.id}
-                className="bg-white border border-neutral-200 p-12 hover:border-neutral-900 transition-colors"
+                id={service.id}
+                className="bg-white border border-neutral-200 p-6 md:p-12 hover:border-neutral-900 transition-colors scroll-mt-32"
               >
                 <div className="grid md:grid-cols-12 gap-8">
                   <div className="md:col-span-5">
@@ -105,6 +100,17 @@ export default function ServicesPage() {
               </div>
             ))}
           </div>
+
+          <section className="mt-16 pt-16 border-t border-neutral-200 max-w-prose" aria-labelledby="engagement-heading">
+            <h2 id="engagement-heading" className="text-3xl font-semibold tracking-tight mb-6">
+              {servicesPage.engagement.heading}
+            </h2>
+            <div className="space-y-6 text-lg text-neutral-700 leading-relaxed">
+              {servicesPage.engagement.body.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </div>
+          </section>
 
           {/* CTA to Work */}
           <div className="pt-16 mt-16 border-t border-neutral-200">

@@ -73,10 +73,10 @@ All site content is centralized in a single file for easy updates:
 - **data/content.ts**: Single source of truth containing:
   - `siteMeta`: Site-wide metadata (name, email, social links)
   - `nav`: Navigation links
-  - `homePage`: Hero content and "How I help" items
+  - `homePage`: Hero content, "How I help" links, and curated featured-project slugs and summaries
   - `aboutPage`: Narrative sections about background and approach
   - `servicesPage`: Detailed service offerings with structured content
-  - `workPage`: Project previews and full case study content
+  - `workPage`: Project previews and full case study content; the first section introduces the problem, Scott's contribution, and supported result before the media, with the remaining sections providing detail
   - `footer`: Footer content
 
 This centralized approach allows content updates without touching component code. Components import only what they need from this file.
@@ -108,6 +108,8 @@ Both development and production servers are explicitly configured to run on port
 - Dynamic robots.txt via app/robots.ts
 - Dynamic sitemap.xml via app/sitemap.ts
 - metadataBase set from siteMeta.url (https://cullumandco.com)
+- `data/brand.ts` supplies the same badge sharing image to every page, including case studies
+- Run `node scripts/generate-brand-assets.mjs` after changing brand artwork. It preserves the supplied originals in `public/images/brand`, fits the badge into `public/images/cullum-and-co-badge-share.png` (also retained at `/og.png`), and creates curled-C browser/Apple icons plus a multi-size favicon. Header/footer wordmark styling remains separate.
 
 ## Routing Structure
 

@@ -9,12 +9,23 @@ import { PNG } from 'pngjs';
 // Use the original PNG's alpha as a mask; never trace or edit its letterforms.
 const root = new URL('../', import.meta.url);
 const logo = await readFile(new URL('public/images/cullum-and-co-wordmark.png', root));
-const logoWidth = logo.readUInt32BE(16);
-const logoHeight = logo.readUInt32BE(20);
-const ratio = logoHeight / logoWidth;
 const { colors } = resolveConfig(tailwindConfig).theme;
 const orange = colors.orange[600];
 const white = colors.white;
+
+// These are the supplied originals. Scale them uniformly; preserve their colors,
+// backgrounds, and artwork rather than recreating them with type or masks.
+async function sourceImage(path) {
+  const bytes = await readFile(new URL(path, root));
+  return {
+    src: `data:image/png;base64,${bytes.toString('base64')}`,
+    width: bytes.readUInt32BE(16),
+    height: bytes.readUInt32BE(20),
+  };
+}
+
+const curledC = await sourceImage('public/images/brand/curled-c-original.png');
+const badge = await sourceImage('public/images/brand/cullum-and-co-badge-original.png');
 
 function maskedLogo(color) {
   const image = PNG.sync.read(logo);
@@ -31,39 +42,57 @@ function maskedLogo(color) {
 }
 
 const orangeLogo = maskedLogo(orange);
-const whiteLogo = maskedLogo(white);
-const logoImage = (width, color = orange) => h('img', {
-  src: `data:image/png;base64,${(color === white ? whiteLogo : orangeLogo).toString('base64')}`,
-  alt: 'Cullum & Co',
-  width,
-  height: width * ratio,
-});
 
-async function render(path, width, height, element) {
-  const response = new ImageResponse(element, { width, height });
-  await writeFile(new URL(path, root), Buffer.from(await response.arrayBuffer()));
+async function renderImage(image, width, height) {
+  const scale = Math.min(width / image.width, height / image.height);
+  const response = new ImageResponse(
+    h('div', { style: {
+      width: '100%', height: '100%', display: 'flex', alignItems: 'center',
+      justifyContent: 'center', background: white,
+    } }, h('img', {
+      src: image.src,
+      width: image.width * scale,
+      height: image.height * scale,
+    })),
+    { width, height },
+  );
+  return Buffer.from(await response.arrayBuffer());
+}
+
+async function save(path, bytes) {
+  await writeFile(new URL(path, root), bytes);
   console.log(fileURLToPath(new URL(path, root)));
 }
 
 await writeFile(new URL('public/images/cullum-and-co-wordmark-orange.png', root), orangeLogo);
 
-await render('public/og.png', 1200, 630,
-  h('div', { style: {
-    width: '100%', height: '100%', display: 'flex', flexDirection: 'column',
-    alignItems: 'center', justifyContent: 'center', background: white,
-    color: colors.neutral[900], borderBottom: `12px solid ${orange}`,
-  } },
-  logoImage(900),
-  h('div', { style: { fontSize: 38, marginTop: 18 } }, 'Scott Cullum'),
-  h('div', { style: { fontSize: 26, marginTop: 8 } }, 'Creative technology & fractional advisory'),
-  h('div', { style: { fontSize: 25, color: colors.orange[700], marginTop: 20 } }, 'cullumandco.com')),
-);
+// Keep the entire square badge in the center so both wide and square previews
+// retain its border and lettering. The original light background remains intact.
+const sharingImage = await renderImage(badge, 1200, 630);
+await save('public/images/cullum-and-co-badge-share.png', sharingImage);
+// Keep the former URL useful for existing links; new metadata uses the new path.
+await save('public/og.png', sharingImage);
 
-for (const [path, size] of [['app/icon.png', 96], ['app/apple-icon.png', 180]]) {
-  await render(path, size, size,
-    h('div', { style: {
-      width: '100%', height: '100%', display: 'flex', alignItems: 'center',
-      justifyContent: 'center', background: orange,
-    } }, logoImage(size * 0.94, white)),
-  );
+for (const [path, size] of [['app/icon.png', 192], ['app/apple-icon.png', 180]]) {
+  await save(path, await renderImage(curledC, size, size));
 }
+
+// ICO can contain PNG frames. Include native tab sizes instead of relying on a
+// browser to reduce the full wordmark or a single oversized icon.
+const sizes = [16, 32, 48];
+const frames = await Promise.all(sizes.map((size) => renderImage(curledC, size, size)));
+const directory = Buffer.alloc(6 + sizes.length * 16);
+directory.writeUInt16LE(1, 2);
+directory.writeUInt16LE(sizes.length, 4);
+let offset = directory.length;
+frames.forEach((frame, index) => {
+  const entry = 6 + index * 16;
+  directory[entry] = sizes[index];
+  directory[entry + 1] = sizes[index];
+  directory.writeUInt16LE(1, entry + 4);
+  directory.writeUInt16LE(32, entry + 6);
+  directory.writeUInt32LE(frame.length, entry + 8);
+  directory.writeUInt32LE(offset, entry + 12);
+  offset += frame.length;
+});
+await save('app/favicon.ico', Buffer.concat([directory, ...frames]));

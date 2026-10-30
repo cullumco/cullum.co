@@ -1,4 +1,5 @@
 import { workPage, siteMeta } from '@/data/content';
+import { socialImage } from '@/data/brand';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Navigation } from '@/app/components/Navigation';
@@ -17,20 +18,13 @@ export const metadata = {
     siteName: 'Cullum & Co',
     locale: 'en_US',
     type: 'website',
-    images: [
-      {
-        url: '/og.png',
-        width: 1200,
-        height: 630,
-        alt: 'Cullum & Co - Scott Cullum, creative technology and fractional advisory',
-      },
-    ],
+    images: [socialImage],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Work - Cullum & Co',
     description: 'My work across design, engineering, and product, including Cullum & Co projects and my contributions at World Wide Technology and AKQA.',
-    images: [{ url: '/og.png', alt: 'Cullum & Co - Scott Cullum, creative technology and fractional advisory' }],
+    images: [socialImage],
   },
 };
 
