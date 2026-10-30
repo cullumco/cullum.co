@@ -1,4 +1,5 @@
 import { workPage, siteMeta } from '@/data/content';
+import { socialImage } from '@/data/brand';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -27,7 +28,6 @@ export async function generateMetadata({ params }: PageProps) {
   }
 
   const url = `${siteMeta.url}/work/${project.slug}`;
-  const imageUrl = project.image || '/og.png';
 
   return {
     title: `${project.name} - Cullum & Co`,
@@ -42,20 +42,13 @@ export async function generateMetadata({ params }: PageProps) {
       siteName: 'Cullum & Co',
       locale: 'en_US',
       type: 'article',
-      images: [
-        {
-          url: imageUrl,
-          width: 1200,
-          height: 630,
-          alt: project.name,
-        },
-      ],
+      images: [socialImage],
     },
     twitter: {
       card: 'summary_large_image',
       title: `${project.name} - Cullum & Co`,
       description: project.tagline,
-      images: [imageUrl],
+      images: [socialImage],
     },
   };
 }

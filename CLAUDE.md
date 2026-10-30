@@ -108,6 +108,8 @@ Both development and production servers are explicitly configured to run on port
 - Dynamic robots.txt via app/robots.ts
 - Dynamic sitemap.xml via app/sitemap.ts
 - metadataBase set from siteMeta.url (https://cullumandco.com)
+- `data/brand.ts` supplies the same badge sharing image to every page, including case studies
+- Run `node scripts/generate-brand-assets.mjs` after changing brand artwork. It preserves the supplied originals in `public/images/brand`, fits the badge into `public/images/cullum-and-co-badge-share.png` (also retained at `/og.png`), and creates curled-C browser/Apple icons plus a multi-size favicon. Header/footer wordmark styling remains separate.
 
 ## Routing Structure
 

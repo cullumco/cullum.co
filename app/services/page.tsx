@@ -1,4 +1,5 @@
 import { servicesPage, siteMeta } from '@/data/content';
+import { socialImage } from '@/data/brand';
 import { Navigation } from '@/app/components/Navigation';
 import { Footer } from '@/app/components/Footer';
 
@@ -15,20 +16,13 @@ export const metadata = {
     siteName: 'Cullum & Co',
     locale: 'en_US',
     type: 'website',
-    images: [
-      {
-        url: '/og.png',
-        width: 1200,
-        height: 630,
-        alt: 'Cullum & Co - Scott Cullum, creative technology and fractional advisory',
-      },
-    ],
+    images: [socialImage],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Services - Cullum & Co',
     description: 'Creative and technical direction, hands-on prototyping, and support for teams improving how they work. Work with Scott Cullum through Cullum & Co.',
-    images: [{ url: '/og.png', alt: 'Cullum & Co - Scott Cullum, creative technology and fractional advisory' }],
+    images: [socialImage],
   },
 };
 
