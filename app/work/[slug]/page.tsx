@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: PageProps) {
     };
   }
 
-  const url = `https://scullum.com/work/${project.slug}`;
+  const url = `https://cullumandco.com/work/${project.slug}`;
   const imageUrl = project.image || '/images/scott-cullum.jpg';
 
   return {
@@ -75,13 +75,13 @@ export default function ProjectPage({ params }: PageProps) {
     author: {
       '@type': 'Person',
       name: 'Scott Cullum',
-      url: 'https://scullum.com',
+      url: 'https://cullumandco.com',
     },
     publisher: {
       '@type': 'Organization',
       name: project.company,
     },
-    url: `https://scullum.com/work/${project.slug}`,
+    url: `https://cullumandco.com/work/${project.slug}`,
     image: project.image,
   };
 

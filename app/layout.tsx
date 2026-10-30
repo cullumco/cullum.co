@@ -13,14 +13,14 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   title: 'Scott Cullum - Creative Technologist & Product Consultant',
   description: 'Senior consultant working across design, engineering, and AI-native product acceleration.',
-  metadataBase: new URL('https://scullum.com'),
+  metadataBase: new URL('https://cullumandco.com'),
   alternates: {
-    canonical: 'https://scullum.com',
+    canonical: 'https://cullumandco.com',
   },
   openGraph: {
     title: 'Scott Cullum - Creative Technologist & Product Consultant',
     description: 'Senior consultant working across design, engineering, and AI-native product acceleration.',
-    url: 'https://scullum.com',
+    url: 'https://cullumandco.com',
     siteName: 'Scott Cullum',
     locale: 'en_US',
     type: 'website',
@@ -50,7 +50,7 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: 'Scott Cullum',
-    url: 'https://scullum.com',
+    url: 'https://cullumandco.com',
     jobTitle: 'Creative Technologist & Product Consultant',
     description: 'Senior consultant working across design, engineering, and AI-native product acceleration.',
     email: 'scott@cullum.co',
